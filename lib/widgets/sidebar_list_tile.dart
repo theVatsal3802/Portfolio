@@ -13,22 +13,28 @@ class SidebarListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 45),
-      child: ListTile(
-        style: ListTileStyle.drawer,
-        onTap: onTap,
-        title: Text(
-          title,
-          textScaleFactor: 1,
-          style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                color: Theme.of(context).colorScheme.onPrimary,
-              ),
-        ),
-        leading: Icon(
-          icon,
-          color: Theme.of(context).colorScheme.onPrimary,
-          size: 32,
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.only(left: 45),
+        child: ListTile(
+          style: ListTileStyle.drawer,
+          onTap: onTap,
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              title,
+              textScaleFactor: 1,
+              style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                    color: Theme.of(context).colorScheme.onPrimary,
+                  ),
+            ),
+          ),
+          leading: Icon(
+            icon,
+            color: Theme.of(context).colorScheme.onPrimary,
+            size: 32,
+          ),
         ),
       ),
     );

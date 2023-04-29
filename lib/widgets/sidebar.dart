@@ -9,8 +9,9 @@ class Sidebar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
     return Container(
-      width: MediaQuery.of(context).size.width * 0.23,
+      width: width * 0.23,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
       ),
@@ -18,7 +19,9 @@ class Sidebar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Spacer(),
+          const SizedBox(
+            height: 50,
+          ),
           CircleAvatar(
             radius: 88,
             backgroundColor: const Color(0xff453838),
@@ -28,54 +31,80 @@ class Sidebar extends StatelessWidget {
               foregroundImage: const AssetImage("assets/me_circle.png"),
             ),
           ),
-          const Spacer(),
-          Text(
-            Data.name,
-            textScaleFactor: 1,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.headlineLarge!.copyWith(
-                  color: Theme.of(context).colorScheme.onPrimary,
-                  fontWeight: FontWeight.bold,
-                ),
+          const SizedBox(
+            height: 30,
           ),
-          const Spacer(),
-          SizedBox(
-            width: MediaQuery.of(context).size.width * 0.23,
-            child: const Center(
-              child: ConnectIconRow(),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.center,
+            child: Text(
+              Data.name,
+              textScaleFactor: 1,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                    color: Theme.of(context).colorScheme.onPrimary,
+                    fontWeight: FontWeight.bold,
+                  ),
             ),
           ),
-          const Spacer(),
+          const SizedBox(
+            height: 30,
+          ),
+          if (width * 0.23 > 350)
+            SizedBox(
+              width: width * 0.23,
+              child: const Center(
+                child: ConnectIconRow(),
+              ),
+            ),
+          if (width * 0.23 <= 350)
+            OutlinedButton(
+              onPressed: () {},
+              style: OutlinedButton.styleFrom(
+                side: BorderSide(
+                  color: Theme.of(context).colorScheme.onPrimary,
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Let's Connect",
+                  textScaleFactor: 1,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        color: Theme.of(context).colorScheme.onPrimary,
+                      ),
+                ),
+              ),
+            ),
+          const SizedBox(
+            height: 30,
+          ),
           SidebarListTile(
             title: "Home",
             icon: Icons.home_filled,
             onTap: () {},
           ),
-          const Spacer(),
           SidebarListTile(
             title: "About",
             icon: Icons.person,
             onTap: () {},
           ),
-          const Spacer(),
           SidebarListTile(
             title: "Resume",
             icon: Icons.contact_page_outlined,
             onTap: () {},
           ),
-          const Spacer(),
           SidebarListTile(
             title: "Projects",
             icon: FontAwesomeIcons.globe,
             onTap: () {},
           ),
-          const Spacer(),
           SidebarListTile(
             title: "Contact",
             icon: Icons.contact_support_outlined,
             onTap: () {},
           ),
-          const Spacer(),
           Padding(
             padding: const EdgeInsets.all(20),
             child: Text(
