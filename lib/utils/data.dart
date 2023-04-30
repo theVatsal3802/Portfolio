@@ -1,5 +1,3 @@
-import 'package:portfolio/utils/parse_functions.dart';
-
 class Data {
   static const String name = "Vatsal Adhiya";
   static const String description =
@@ -12,10 +10,9 @@ class Data {
   static const String email = "vatsaladhiya248@gmail.com";
   static const String dob = "3rd August, 2002";
   static const String phone = "8097058898";
-  static String age = (ParseFunctions.getAge().toString());
   static const String devStatus = "vatsaladhiya248@gmail.com";
-  static const String study = "";
-  static const String location = "";
+  static const String study = "B.Tech in CSE from IIIT Kota";
+  static const String location = "Jaipur, Rajasthan, India";
 
   static const String co =
       "A highly enthusiastic Flutter developer with a passion for innovation and an interest in machine learning and quantum computing. Always seeking new challenges and opportunities to grow as a developer. Driven to create beautiful, responsive designs and leverage the latest technologies to bring impactful solutions to life. Committed to continuously learning and pushing the boundaries of what is possible in the tech industry.";

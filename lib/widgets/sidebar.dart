@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/screens/about_screen.dart';
+import 'package:portfolio/screens/home.dart';
 import 'package:portfolio/utils/data.dart';
 import 'package:portfolio/widgets/connect_icon_row.dart';
 import 'package:portfolio/widgets/sidebar_list_tile.dart';
@@ -83,12 +85,22 @@ class Sidebar extends StatelessWidget {
           SidebarListTile(
             title: "Home",
             icon: Icons.home_filled,
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                Home.routeName,
+                (route) => false,
+              );
+            },
           ),
           SidebarListTile(
             title: "About",
             icon: Icons.person,
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                AboutScreen.routeName,
+                (route) => false,
+              );
+            },
           ),
           SidebarListTile(
             title: "Resume",

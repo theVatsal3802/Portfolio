@@ -7,37 +7,35 @@ class ConnectIconRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          RoundedButton(
-            tooltip: "LinkedIn",
-            iconName: FontAwesomeIcons.linkedin,
-            onTap: () {},
-          ),
-          RoundedButton(
-            tooltip: "Gmail",
-            iconName: Icons.email,
-            onTap: () {},
-          ),
-          RoundedButton(
-            tooltip: "Instagram",
-            iconName: FontAwesomeIcons.instagram,
-            onTap: () {},
-          ),
-          RoundedButton(
-            tooltip: "GitHub",
-            iconName: FontAwesomeIcons.github,
-            onTap: () {},
-          ),
-          RoundedButton(
-            tooltip: "Twitter",
-            iconName: FontAwesomeIcons.twitter,
-            onTap: () {},
-          ),
-        ],
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        RoundedButton(
+          tooltip: "LinkedIn",
+          iconName: FontAwesomeIcons.linkedin,
+          onTap: () {},
+        ),
+        RoundedButton(
+          tooltip: "Gmail",
+          iconName: Icons.email,
+          onTap: () {},
+        ),
+        RoundedButton(
+          tooltip: "Instagram",
+          iconName: FontAwesomeIcons.instagram,
+          onTap: () {},
+        ),
+        RoundedButton(
+          tooltip: "GitHub",
+          iconName: FontAwesomeIcons.github,
+          onTap: () {},
+        ),
+        RoundedButton(
+          tooltip: "Twitter",
+          iconName: FontAwesomeIcons.twitter,
+          onTap: () {},
+        ),
+      ],
     );
   }
 }

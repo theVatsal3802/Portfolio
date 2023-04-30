@@ -10,9 +10,4 @@ class ParseFunctions {
     return MediaQuery.of(context).size.width ==
         MediaQuery.of(context).size.height;
   }
-
-  static int getAge() {
-    int year = DateTime.now().year;
-    return year - 2002;
-  }
 }

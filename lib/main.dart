@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/screens/about_screen.dart';
 import 'package:portfolio/screens/home.dart';
 import 'package:portfolio/utils/theme.dart';
 
@@ -15,6 +16,10 @@ class MyApp extends StatelessWidget {
       title: 'Vatsal Adhiya',
       theme: theme(),
       home: const Home(),
+      routes: {
+        Home.routeName: (context) => const Home(),
+        AboutScreen.routeName: (context) => const AboutScreen(),
+      },
     );
   }
 }
