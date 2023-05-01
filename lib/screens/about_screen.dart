@@ -71,6 +71,7 @@ class AboutScreen extends StatelessWidget {
                       Text(
                         Data.about,
                         textScaleFactor: 1,
+                        textAlign: TextAlign.justify,
                         style: Theme.of(context)
                             .textTheme
                             .headlineSmall!
@@ -172,7 +173,32 @@ class AboutScreen extends StatelessWidget {
                               color: Theme.of(context).colorScheme.onPrimary,
                             ),
                       ),
-                      const ExperienceWidget(),
+                      ExperienceWidget(
+                        data: Data.experience[0]["Intern"]![0],
+                        image: "assets/kf.png",
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      Divider(
+                        color: Theme.of(context).colorScheme.background,
+                        endIndent: 50,
+                        indent: 50,
+                        thickness: 1,
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      Text(
+                        "Education",
+                        textScaleFactor: 1,
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineMedium!
+                            .copyWith(
+                              color: Theme.of(context).colorScheme.onPrimary,
+                            ),
+                      ),
                     ],
                   ),
                 ),

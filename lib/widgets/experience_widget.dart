@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/utils/data.dart';
 import 'package:portfolio/utils/parse_functions.dart';
 
 class ExperienceWidget extends StatelessWidget {
+  final Map<String, String> data;
+  final String image;
   const ExperienceWidget({
+    required this.data,
+    required this.image,
     super.key,
   });
 
@@ -42,7 +45,7 @@ class ExperienceWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset(
-            "kf.png",
+            image,
             fit: BoxFit.contain,
             height: 250,
             width: 250,
@@ -51,28 +54,58 @@ class ExperienceWidget extends StatelessWidget {
           const SizedBox(
             width: 20,
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "${Data.experience[0]["Intern"]![0]["role"]!} at ${Data.experience[0]["Intern"]![0]["name"]!}",
-                textScaleFactor: 1,
-                style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                      color: Theme.of(context).colorScheme.onPrimary,
-                    ),
-              ),
-              Chip(
-                backgroundColor: Colors.black45,
-                label: Text(
-                  Data.experience[0]["Intern"]![0]["duration"]!,
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "${data["role"] ?? ""} at ${data["name"] ?? ""}",
                   textScaleFactor: 1,
-                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                         color: Theme.of(context).colorScheme.onPrimary,
                       ),
                 ),
-              ),
-            ],
+                Chip(
+                  backgroundColor: Colors.black45,
+                  padding: const EdgeInsets.all(5),
+                  label: Text(
+                    data["duration"] ?? "",
+                    textScaleFactor: 1,
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                          color: Theme.of(context).colorScheme.onPrimary,
+                        ),
+                  ),
+                ),
+                Text(
+                  data["description"] ?? "",
+                  textScaleFactor: 1,
+                  textAlign: TextAlign.justify,
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                        color: Theme.of(context).colorScheme.onPrimary,
+                      ),
+                ),
+                ElevatedButton.icon(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Theme.of(context).colorScheme.onPrimary,
+                    padding: const EdgeInsets.all(20),
+                  ),
+                  icon: Icon(
+                    Icons.open_in_new,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                  label: Text(
+                    "Visit Company Website",
+                    textScaleFactor: 1,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
