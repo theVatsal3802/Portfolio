@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/utils/data.dart';
 import 'package:portfolio/utils/parse_functions.dart';
 
-class AboutWidget extends StatelessWidget {
-  final IconData icon;
-  final String text;
-  const AboutWidget({
+class ExperienceWidget extends StatelessWidget {
+  const ExperienceWidget({
     super.key,
-    required this.icon,
-    required this.text,
   });
 
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Container(
-      height: 100,
-      width: ParseFunctions.responsive(context) ? width * 0.3 : width * 0.4,
+      height: 300,
+      width: ParseFunctions.responsive(context) ? width * 0.7 : width * 0.9,
       margin: const EdgeInsets.all(20),
       padding: const EdgeInsets.symmetric(
         vertical: 5,
@@ -45,31 +41,38 @@ class AboutWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          CircleAvatar(
-            radius: 40,
-            backgroundColor: Colors.white12,
-            child: FaIcon(
-              icon,
-              color: Theme.of(context).colorScheme.onPrimary,
-              size: 40,
-            ),
+          Image.asset(
+            "kf.png",
+            fit: BoxFit.contain,
+            height: 250,
+            width: 250,
+            filterQuality: FilterQuality.high,
           ),
           const SizedBox(
-            width: 30,
+            width: 20,
           ),
-          Expanded(
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              alignment: Alignment.centerLeft,
-              child: Text(
-                text,
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "${Data.experience[0]["Intern"]![0]["role"]!} at ${Data.experience[0]["Intern"]![0]["name"]!}",
                 textScaleFactor: 1,
-                maxLines: 1,
-                style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                       color: Theme.of(context).colorScheme.onPrimary,
                     ),
               ),
-            ),
+              Chip(
+                backgroundColor: Colors.black45,
+                label: Text(
+                  Data.experience[0]["Intern"]![0]["duration"]!,
+                  textScaleFactor: 1,
+                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                        color: Theme.of(context).colorScheme.onPrimary,
+                      ),
+                ),
+              ),
+            ],
           ),
         ],
       ),

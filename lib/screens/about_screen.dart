@@ -3,8 +3,10 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/utils/data.dart';
 import 'package:portfolio/utils/parse_functions.dart';
 import 'package:portfolio/widgets/about_widget.dart';
+import 'package:portfolio/widgets/experience_widget.dart';
 import 'package:portfolio/widgets/side_drawer.dart';
 import 'package:portfolio/widgets/sidebar.dart';
+import 'package:portfolio/widgets/skills.dart';
 
 class AboutScreen extends StatelessWidget {
   static const routeName = "about";
@@ -67,14 +69,24 @@ class AboutScreen extends StatelessWidget {
                         height: 30,
                       ),
                       Text(
-                        Data.aboutShort,
+                        Data.about,
                         textScaleFactor: 1,
                         style: Theme.of(context)
                             .textTheme
                             .headlineSmall!
                             .copyWith(
                               color: Theme.of(context).colorScheme.onPrimary,
+                              fontWeight: FontWeight.w300,
                             ),
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      Divider(
+                        color: Theme.of(context).colorScheme.background,
+                        endIndent: 50,
+                        indent: 50,
+                        thickness: 1,
                       ),
                       const SizedBox(
                         height: 30,
@@ -86,68 +98,81 @@ class AboutScreen extends StatelessWidget {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.center,
-                            children: const [
-                              AboutWdiget(
-                                icon: FontAwesomeIcons.cakeCandles,
-                                text: Data.dob,
+                            children: [
+                              Text(
+                                "General Details",
+                                textScaleFactor: 1,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headlineMedium!
+                                    .copyWith(
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onPrimary,
+                                    ),
                               ),
-                              AboutWdiget(
-                                icon: FontAwesomeIcons.mobile,
-                                text: Data.phone,
+                              const SizedBox(
+                                height: 10,
                               ),
-                              AboutWdiget(
-                                icon: Icons.email_outlined,
-                                text: Data.email,
-                              ),
-                              AboutWdiget(
-                                icon: Icons.location_on_outlined,
-                                text: Data.location,
-                              ),
-                              AboutWdiget(
+                              const AboutWidget(
                                 icon: Icons.school_outlined,
                                 text: Data.study,
                               ),
+                              const AboutWidget(
+                                icon: Icons.location_on_outlined,
+                                text: Data.location,
+                              ),
+                              const AboutWidget(
+                                icon: FontAwesomeIcons.cakeCandles,
+                                text: Data.dob,
+                              ),
                             ],
                           ),
-                          Image.asset(
-                            "assets/me.jpg",
-                            height:
-                                ParseFunctions.responsive(context) ? 600 : 700,
-                            width: ParseFunctions.responsive(context)
-                                ? width * 0.3
-                                : width * 0.4,
-                            fit: BoxFit.contain,
-                          )
+                          Column(
+                            children: [
+                              Text(
+                                "My Skills",
+                                textScaleFactor: 1,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headlineMedium!
+                                    .copyWith(
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onPrimary,
+                                    ),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              const Skills(),
+                            ],
+                          ),
                         ],
                       ),
                       const SizedBox(
                         height: 30,
                       ),
-                      Text(
-                        "More about me",
-                        textScaleFactor: 1,
-                        style: Theme.of(context)
-                            .textTheme
-                            .headlineLarge!
-                            .copyWith(
-                              color: Theme.of(context).colorScheme.onPrimary,
-                              fontWeight: FontWeight.bold,
-                              decoration: TextDecoration.underline,
-                            ),
+                      Divider(
+                        color: Theme.of(context).colorScheme.background,
+                        endIndent: 50,
+                        indent: 50,
+                        thickness: 1,
                       ),
                       const SizedBox(
                         height: 30,
                       ),
                       Text(
-                        Data.about,
+                        "Experience",
                         textScaleFactor: 1,
                         style: Theme.of(context)
                             .textTheme
-                            .headlineSmall!
+                            .headlineMedium!
                             .copyWith(
                               color: Theme.of(context).colorScheme.onPrimary,
                             ),
                       ),
+                      const ExperienceWidget(),
                     ],
                   ),
                 ),
