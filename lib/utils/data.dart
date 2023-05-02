@@ -3,14 +3,16 @@ class Data {
   static const String description =
       "Enthusiastic Flutter dev.\nCreating innovative mobile apps and always looking to push boundaries in tech.";
   static const String about =
-      "Hello, my name is Vatsal Adhiya. I am currently studying in IIIT Kota.  I am a third year B.Tech student in the field of Computer Science and Engineering.\nI am a Flutter developer with a passion for creating innovative mobile apps and a keen interest in machine learning and quantum computing.\nWith strong skills in Flutter development and a desire to stay at the forefront of the industry, I bring responsive and beautiful designs to life.\nAlways eager to learn and take on new challenges, I strive to push the boundaries of mobile development.\nI am constantly seeking new opportunities to grow and improve as a developer.";
+      "Hello, my name is Vatsal Adhiya. I am currently studying in IIIT Kota.  I am a third year B.Tech student in the field of Computer Science and Engineering. I am a Flutter developer with a passion for creating innovative mobile apps and a keen interest in machine learning and quantum computing. With strong skills in Flutter development and a desire to stay at the forefront of the industry, I bring responsive and beautiful designs to life. Always eager to learn and take on new challenges, I strive to push the boundaries of mobile development. I am constantly seeking new opportunities to grow and improve as a developer.";
 
   static const String email = "vatsaladhiya248@gmail.com";
   static const String dob = "3rd August, 2002";
   static const String phone = "8097058898";
-  static const String devStatus = "vatsaladhiya248@gmail.com";
   static const String study = "B.Tech in CSE from IIIT Kota";
   static const String location = "Jaipur, Rajasthan, India";
+
+  static const String resumeLink =
+      "https://drive.google.com/file/d/1Xscl9ina-rZhCGeH1OzI7yXinAvIrSJO/view?usp=sharing";
 
   static const List<Map<String, Map<String, String>>> education = [
     {
@@ -92,4 +94,11 @@ class Data {
       },
     },
   ];
+
+  static const String linkedin =
+      "https://www.linkedin.com/in/vatsal-adhiya-206479202";
+  static const String instagram = "https://www.instagram.com/thevatsal3802/";
+  static const String github = "https://github.com/theVatsal3802";
+  static const String twitter = "https://twitter.com/adhiya_vatsal_3";
+  static const String gmail = "mailto:vatsaladhiya248@gmail.com";
 }

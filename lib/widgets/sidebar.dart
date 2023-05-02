@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/screens/about_screen.dart';
 import 'package:portfolio/screens/home.dart';
+import 'package:portfolio/screens/resume_screen.dart';
 import 'package:portfolio/utils/data.dart';
 import 'package:portfolio/widgets/connect_icon_row.dart';
 import 'package:portfolio/widgets/sidebar_list_tile.dart';
@@ -52,33 +53,7 @@ class Sidebar extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          if (width * 0.23 > 350)
-            SizedBox(
-              width: width * 0.23,
-              child: const Center(
-                child: ConnectIconRow(),
-              ),
-            ),
-          if (width * 0.23 <= 350)
-            OutlinedButton(
-              onPressed: () {},
-              style: OutlinedButton.styleFrom(
-                side: BorderSide(
-                  color: Theme.of(context).colorScheme.onPrimary,
-                ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  "Let's Connect",
-                  textScaleFactor: 1,
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                        color: Theme.of(context).colorScheme.onPrimary,
-                      ),
-                ),
-              ),
-            ),
+          const ConnectIconRow(),
           const SizedBox(
             height: 30,
           ),
@@ -105,7 +80,12 @@ class Sidebar extends StatelessWidget {
           SidebarListTile(
             title: "Resume",
             icon: Icons.contact_page_outlined,
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                ResumeScreen.routeName,
+                (route) => false,
+              );
+            },
           ),
           SidebarListTile(
             title: "Projects",
@@ -120,20 +100,7 @@ class Sidebar extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(20),
             child: Text(
-              "©️ Vatsal Adhiya",
-              textScaleFactor: 1,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyMedium!
-                  .copyWith(color: Theme.of(context).colorScheme.onPrimary),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(
-              bottom: 20,
-            ),
-            child: Text(
-              "Designed by Deepanshi Birla",
+              "©️ ${DateTime.now().year} | Vatsal Adhiya",
               textScaleFactor: 1,
               style: Theme.of(context)
                   .textTheme

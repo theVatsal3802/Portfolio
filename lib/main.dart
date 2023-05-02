@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/screens/about_screen.dart';
 import 'package:portfolio/screens/home.dart';
+import 'package:portfolio/screens/resume_screen.dart';
 import 'package:portfolio/utils/theme.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Home.routeName: (context) => const Home(),
         AboutScreen.routeName: (context) => const AboutScreen(),
+        ResumeScreen.routeName: (context) => const ResumeScreen(),
       },
     );
   }

@@ -86,7 +86,12 @@ class ExperienceWidget extends StatelessWidget {
                       ),
                 ),
                 ElevatedButton.icon(
-                  onPressed: () {},
+                  onPressed: () async {
+                    await ParseFunctions.launchConnection(
+                      data["website"] ?? "",
+                      context,
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Theme.of(context).colorScheme.onPrimary,
                     padding: const EdgeInsets.all(20),

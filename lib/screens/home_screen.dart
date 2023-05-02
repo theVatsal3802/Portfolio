@@ -55,9 +55,11 @@ class HomeScreen extends StatelessWidget {
                     style: ParseFunctions.responsive(context)
                         ? Theme.of(context).textTheme.headlineLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onPrimary,
+                              fontWeight: FontWeight.w200,
                             )
                         : Theme.of(context).textTheme.headlineMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onPrimary,
+                              fontWeight: FontWeight.w200,
                             ),
                   ),
                 ),

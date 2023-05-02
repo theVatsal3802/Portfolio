@@ -31,6 +31,9 @@ class Skills extends StatelessWidget {
             imageUrl: "https://img.icons8.com/sf-black/64/null/github.png",
           ),
           SkillWidget(
+            imageUrl: "https://img.icons8.com/color/48/null/firebase.png",
+          ),
+          SkillWidget(
             imageUrl:
                 "https://img.icons8.com/color/48/null/c-plus-plus-logo.png",
           ),
