@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/screens/about_screen.dart';
+import 'package:portfolio/screens/contact_screen.dart';
 import 'package:portfolio/screens/home.dart';
 import 'package:portfolio/screens/resume_screen.dart';
 import 'package:portfolio/utils/data.dart';
@@ -95,7 +96,12 @@ class Sidebar extends StatelessWidget {
           SidebarListTile(
             title: "Contact",
             icon: Icons.contact_support_outlined,
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                ContactScreen.routeName,
+                (route) => false,
+              );
+            },
           ),
           Padding(
             padding: const EdgeInsets.all(20),

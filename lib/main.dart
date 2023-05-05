@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/screens/about_screen.dart';
+import 'package:portfolio/screens/contact_screen.dart';
 import 'package:portfolio/screens/home.dart';
 import 'package:portfolio/screens/resume_screen.dart';
 import 'package:portfolio/utils/theme.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         Home.routeName: (context) => const Home(),
         AboutScreen.routeName: (context) => const AboutScreen(),
         ResumeScreen.routeName: (context) => const ResumeScreen(),
+        ContactScreen.routeName: (context) => const ContactScreen(),
       },
     );
   }

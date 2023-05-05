@@ -6,7 +6,7 @@ import 'package:portfolio/widgets/side_drawer.dart';
 import 'package:portfolio/widgets/sidebar.dart';
 
 class Home extends StatelessWidget {
-  static const routeName = "home";
+  static const routeName = "/home";
   const Home({super.key});
 
   @override

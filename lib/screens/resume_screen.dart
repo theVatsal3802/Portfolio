@@ -5,7 +5,7 @@ import 'package:portfolio/widgets/side_drawer.dart';
 import 'package:portfolio/widgets/sidebar.dart';
 
 class ResumeScreen extends StatefulWidget {
-  static const routeName = "resume";
+  static const routeName = "/resume";
   const ResumeScreen({super.key});
 
   @override

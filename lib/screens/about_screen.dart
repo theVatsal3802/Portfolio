@@ -9,7 +9,7 @@ import 'package:portfolio/widgets/sidebar.dart';
 import 'package:portfolio/widgets/skills.dart';
 
 class AboutScreen extends StatelessWidget {
-  static const routeName = "about";
+  static const routeName = "/about";
   const AboutScreen({super.key});
 
   @override
