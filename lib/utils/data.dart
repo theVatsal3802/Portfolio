@@ -14,26 +14,27 @@ class Data {
   static const String resumeLink =
       "https://drive.google.com/file/d/1Xscl9ina-rZhCGeH1OzI7yXinAvIrSJO/view?usp=sharing";
 
-  static const List<Map<String, Map<String, String>>> education = [
+  static const List<Map<String, String>> education = [
     {
-      "10": {
-        "name": "Ryan International School",
-        "image": "assets/education/ryan.jpeg",
-        "duration": "2017 - 2018",
-        "score": "91.57 %",
-      },
-      "12": {
-        "name": "Allen Career Institute",
-        "image": "assets/education/allen.jpeg",
-        "duration": "2018 - 2020",
-        "score": "88.31 %",
-      },
-      "College": {
-        "name": "Indian Institute of Information Technology Kota",
-        "image": "assets/education/iiitkota.png",
-        "duration": "2020 - Present",
-        "score": "CGPA 8.39 / 10",
-      },
+      "name": "Ryan International School, Goregoan East",
+      "image": "assets/ryan.png",
+      "degree": "Grade 10",
+      "duration": "2017 - 2018",
+      "score": "91.57 %",
+    },
+    {
+      "name": "Allen Career Institute, Hiranandani Estate",
+      "image": "assets/allen.png",
+      "degree": "Grade 12",
+      "duration": "2018 - 2020",
+      "score": "88.31 %",
+    },
+    {
+      "name": "Indian Institute of Information Technology Kota",
+      "image": "assets/iiitkota.png",
+      "degree": "Bachelor's in Technology in Computer Science and Engineering",
+      "duration": "2020 - Present",
+      "score": "CGPA 8.39 / 10",
     },
   ];
 
@@ -52,46 +53,41 @@ class Data {
     },
   ];
 
-  static const List<Map<String, Map<String, String>>> projects = [
+  static const List<Map<String, String>> projects = [
     {
-      "Jingola": {
-        "name": "Jingola India",
-        "description":
-            "A complete end to end solution for Jingola India Startup",
-        "link": "https://github.com/theVatsal3802/Jingola-India",
-      },
-      "Teachers": {
-        "name": "Attendance Management System Teachers",
-        "description":
-            "A flutter app to make the process of taking attendance of students easier and fool-proof for the teachers.",
-        "link":
-            "https://github.com/theVatsal3802/Attendance-Version-2-Teachers",
-      },
-      "Students": {
-        "name": "Attendance Management System Students",
-        "description":
-            "A flutter app to make the process of taking attendance of students easier and fool-proof for the teachers. This is the student side app.",
-        "link":
-            "https://github.com/theVatsal3802/Attendance-Version-2-Students",
-      },
-      "Quinnn": {
-        "name": "Quinnn",
-        "description":
-            "Quinnn is a platform designed to connect and empower individuals in the LGBTQ+ community.",
-        "link": "https://github.com/theVatsal3802/Quinnn-App",
-      },
-      "Todo": {
-        "name": "Organiz-Em",
-        "description":
-            "Most of us feel the need to organize our daily tasks. Organiz'Em app is the easiest way to do so.",
-        "link": "https://github.com/theVatsal3802/Organiz-Em",
-      },
-      "Convertex": {
-        "name": "Convertex",
-        "description":
-            "A Simple Currency Converter using Open Exchange API for conversion.",
-        "link": "https://github.com/theVatsal3802/Convertex",
-      },
+      "name": "Quinnn",
+      "description":
+          "This project got was developed for the Google Soution Challenge 2023 and got selected in the top 100 globally. Quinnn is a platform designed to connect and empower individuals in the LGBTQ+ community.",
+      "link": "https://github.com/theVatsal3802/Quinnn-App",
+    },
+    {
+      "name": "Jingola India",
+      "description": "A complete end to end solution for Jingola India Startup",
+      "link": "https://github.com/theVatsal3802/Jingola-India",
+    },
+    {
+      "name": "Attendance Management System Teachers",
+      "description":
+          "A flutter app to make the process of taking attendance of students easier and fool-proof for the teachers.",
+      "link": "https://github.com/theVatsal3802/Attendance-Version-2-Teachers",
+    },
+    {
+      "name": "Attendance Management System Students",
+      "description":
+          "A flutter app to make the process of taking attendance of students easier and fool-proof for the teachers. This is the student side app.",
+      "link": "https://github.com/theVatsal3802/Attendance-Version-2-Students",
+    },
+    {
+      "name": "Organiz-Em",
+      "description":
+          "Most of us feel the need to organize our daily tasks. Organiz'Em app is the easiest way to do so.",
+      "link": "https://github.com/theVatsal3802/Organiz-Em",
+    },
+    {
+      "name": "Convertex",
+      "description":
+          "A Simple Currency Converter using Open Exchange API for conversion.",
+      "link": "https://github.com/theVatsal3802/Convertex",
     },
   ];
 

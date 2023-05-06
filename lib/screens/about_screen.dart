@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/utils/data.dart';
 import 'package:portfolio/utils/parse_functions.dart';
 import 'package:portfolio/widgets/about_widget.dart';
+import 'package:portfolio/widgets/education_widget.dart';
 import 'package:portfolio/widgets/experience_widget.dart';
 import 'package:portfolio/widgets/side_drawer.dart';
 import 'package:portfolio/widgets/sidebar.dart';
@@ -198,6 +199,21 @@ class AboutScreen extends StatelessWidget {
                             .copyWith(
                               color: Theme.of(context).colorScheme.onPrimary,
                             ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          EducationWidget(
+                            data: Data.education[0],
+                          ),
+                          EducationWidget(
+                            data: Data.education[1],
+                          ),
+                          EducationWidget(
+                            data: Data.education[2],
+                          ),
+                        ],
                       ),
                     ],
                   ),
