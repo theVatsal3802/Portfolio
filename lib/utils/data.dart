@@ -32,7 +32,8 @@ class Data {
     {
       "name": "Indian Institute of Information Technology Kota",
       "image": "assets/iiitkota.png",
-      "degree": "Bachelor's in Technology in Computer Science and Engineering",
+      "degree":
+          "Bachelor's in Technology in\n Computer Science and Engineering",
       "duration": "2020 - Present",
       "score": "CGPA 8.39 / 10",
     },

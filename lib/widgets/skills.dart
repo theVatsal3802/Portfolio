@@ -10,7 +10,7 @@ class Skills extends StatelessWidget {
     return SizedBox(
       width: ParseFunctions.responsive(context)
           ? MediaQuery.of(context).size.width * 0.3
-          : MediaQuery.of(context).size.width * 0.4,
+          : MediaQuery.of(context).size.width * 0.9,
       child: Wrap(
         alignment: WrapAlignment.center,
         children: const [

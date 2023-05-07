@@ -16,7 +16,7 @@ class AboutWidget extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Container(
       height: 100,
-      width: ParseFunctions.responsive(context) ? width * 0.3 : width * 0.4,
+      width: ParseFunctions.responsive(context) ? width * 0.3 : width * 0.8,
       margin: const EdgeInsets.all(20),
       padding: const EdgeInsets.symmetric(
         vertical: 5,
@@ -61,13 +61,23 @@ class AboutWidget extends StatelessWidget {
             child: FittedBox(
               fit: BoxFit.scaleDown,
               alignment: Alignment.centerLeft,
-              child: Text(
-                text,
-                textScaleFactor: 1,
-                maxLines: 1,
-                style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                      color: Theme.of(context).colorScheme.onPrimary,
-                    ),
+              child: InkWell(
+                onTap: () async {
+                  if (text.startsWith("https")) {
+                    await ParseFunctions.launchConnection(
+                      text,
+                      context,
+                    );
+                  }
+                },
+                child: Text(
+                  text,
+                  textScaleFactor: 1,
+                  maxLines: 1,
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                        color: Theme.of(context).colorScheme.onPrimary,
+                      ),
+                ),
               ),
             ),
           ),

@@ -12,8 +12,8 @@ class EducationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Container(
-      height: 300,
-      width: ParseFunctions.responsive(context) ? width * 0.21 : width * 0.28,
+      height: 350,
+      width: ParseFunctions.responsive(context) ? width * 0.21 : width * 0.35,
       margin: const EdgeInsets.all(20),
       padding: const EdgeInsets.symmetric(
         vertical: 5,
@@ -49,15 +49,19 @@ class EducationWidget extends StatelessWidget {
             fit: BoxFit.contain,
             filterQuality: FilterQuality.high,
           ),
-          Text(
-            data["degree"]!,
-            textScaleFactor: 1,
-            maxLines: 3,
-            softWrap: true,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
-                ),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.center,
+            child: Text(
+              data["degree"]!,
+              textScaleFactor: 1,
+              maxLines: 2,
+              softWrap: true,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                    color: Theme.of(context).colorScheme.background,
+                  ),
+            ),
           ),
           Text(
             data["name"]!,
@@ -67,9 +71,10 @@ class EducationWidget extends StatelessWidget {
                   color: Theme.of(context).colorScheme.background,
                 ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
+          Wrap(
+            alignment: WrapAlignment.center,
+            spacing: 10,
+            runSpacing: 10,
             children: [
               Chip(
                 backgroundColor: Theme.of(context).colorScheme.secondary,

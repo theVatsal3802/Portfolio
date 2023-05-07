@@ -73,13 +73,20 @@ class AboutScreen extends StatelessWidget {
                         Data.about,
                         textScaleFactor: 1,
                         textAlign: TextAlign.justify,
-                        style: Theme.of(context)
-                            .textTheme
-                            .headlineSmall!
-                            .copyWith(
-                              color: Theme.of(context).colorScheme.onPrimary,
-                              fontWeight: FontWeight.w300,
-                            ),
+                        style: ParseFunctions.responsive(context)
+                            ? Theme.of(context)
+                                .textTheme
+                                .headlineSmall!
+                                .copyWith(
+                                  color:
+                                      Theme.of(context).colorScheme.onPrimary,
+                                  fontWeight: FontWeight.w300,
+                                )
+                            : Theme.of(context).textTheme.bodyLarge!.copyWith(
+                                  color:
+                                      Theme.of(context).colorScheme.onPrimary,
+                                  fontWeight: FontWeight.w300,
+                                ),
                       ),
                       const SizedBox(
                         height: 30,
@@ -130,28 +137,49 @@ class AboutScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Column(
-                            children: [
-                              Text(
-                                "My Skills",
-                                textScaleFactor: 1,
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .headlineMedium!
-                                    .copyWith(
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .onPrimary,
-                                    ),
-                              ),
-                              const SizedBox(
-                                height: 10,
-                              ),
-                              const Skills(),
-                            ],
-                          ),
+                          if (ParseFunctions.responsive(context))
+                            Column(
+                              children: [
+                                Text(
+                                  "My Skills",
+                                  textScaleFactor: 1,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineMedium!
+                                      .copyWith(
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onPrimary,
+                                      ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                const Skills(),
+                              ],
+                            ),
                         ],
                       ),
+                      if (!ParseFunctions.responsive(context))
+                        Column(
+                          children: [
+                            Text(
+                              "My Skills",
+                              textScaleFactor: 1,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headlineMedium!
+                                  .copyWith(
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            const Skills(),
+                          ],
+                        ),
                       const SizedBox(
                         height: 30,
                       ),
@@ -200,9 +228,8 @@ class AboutScreen extends StatelessWidget {
                               color: Theme.of(context).colorScheme.onPrimary,
                             ),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                      Wrap(
+                        alignment: WrapAlignment.center,
                         children: [
                           EducationWidget(
                             data: Data.education[0],

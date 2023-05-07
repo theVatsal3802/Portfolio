@@ -67,6 +67,7 @@ class ProjectScreen extends StatelessWidget {
                       ),
                       Wrap(
                         alignment: WrapAlignment.center,
+                        crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
                           ProjectWidget(
                             data: Data.projects[0],
