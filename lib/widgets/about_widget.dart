@@ -17,7 +17,9 @@ class AboutWidget extends StatelessWidget {
     return Container(
       height: 100,
       width: ParseFunctions.responsive(context) ? width * 0.3 : width * 0.8,
-      margin: const EdgeInsets.all(20),
+      margin: MediaQuery.of(context).size.width > 400
+          ? const EdgeInsets.all(20)
+          : const EdgeInsets.symmetric(vertical: 20),
       padding: const EdgeInsets.symmetric(
         vertical: 5,
         horizontal: 20,
@@ -58,18 +60,18 @@ class AboutWidget extends StatelessWidget {
             width: 30,
           ),
           Expanded(
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              alignment: Alignment.centerLeft,
-              child: InkWell(
-                onTap: () async {
-                  if (text.startsWith("https")) {
-                    await ParseFunctions.launchConnection(
-                      text,
-                      context,
-                    );
-                  }
-                },
+            child: InkWell(
+              onTap: () async {
+                if (text.startsWith("https")) {
+                  await ParseFunctions.launchConnection(
+                    text,
+                    context,
+                  );
+                }
+              },
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.centerLeft,
                 child: Text(
                   text,
                   textScaleFactor: 1,

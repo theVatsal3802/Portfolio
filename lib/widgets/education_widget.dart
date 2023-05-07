@@ -13,7 +13,7 @@ class EducationWidget extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Container(
       height: 350,
-      width: ParseFunctions.responsive(context) ? width * 0.21 : width * 0.35,
+      width: ParseFunctions.responsive(context) ? width * 0.21 : width * 0.8,
       margin: const EdgeInsets.all(20),
       padding: const EdgeInsets.symmetric(
         vertical: 5,

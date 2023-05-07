@@ -14,7 +14,7 @@ class ProjectWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Container(
-      height: 300,
+      height: 400,
       width: ParseFunctions.responsive(context) ? width * 0.21 : width * 0.65,
       margin: const EdgeInsets.all(20),
       padding: const EdgeInsets.all(20),
@@ -57,8 +57,9 @@ class ProjectWidget extends StatelessWidget {
             data["description"]!,
             textScaleFactor: 1,
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+            style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                   color: Theme.of(context).colorScheme.background,
+                  fontSize: 20,
                 ),
           ),
           RoundedButton(
