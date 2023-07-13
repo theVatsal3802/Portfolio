@@ -6,15 +6,10 @@ import 'package:portfolio/widgets/about_widget.dart';
 import 'package:portfolio/widgets/side_drawer.dart';
 import 'package:portfolio/widgets/sidebar.dart';
 
-class ContactScreen extends StatefulWidget {
+class ContactScreen extends StatelessWidget {
   static const routeName = "/contact";
   const ContactScreen({super.key});
 
-  @override
-  State<ContactScreen> createState() => _ContactScreenState();
-}
-
-class _ContactScreenState extends State<ContactScreen> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -91,13 +86,16 @@ class _ContactScreenState extends State<ContactScreen> {
                           const SizedBox(
                             height: 10,
                           ),
-                          Wrap(
+                          const Wrap(
                             alignment: WrapAlignment.center,
                             spacing: 20,
-                            children: const [
-                              AboutWidget(
-                                icon: Icons.call,
-                                text: Data.phone,
+                            children: [
+                              AbsorbPointer(
+                                absorbing: true,
+                                child: AboutWidget(
+                                  icon: Icons.call,
+                                  text: Data.phone,
+                                ),
                               ),
                               AboutWidget(
                                 icon: Icons.email_outlined,

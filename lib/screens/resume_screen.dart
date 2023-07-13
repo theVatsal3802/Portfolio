@@ -4,15 +4,10 @@ import 'package:portfolio/utils/parse_functions.dart';
 import 'package:portfolio/widgets/side_drawer.dart';
 import 'package:portfolio/widgets/sidebar.dart';
 
-class ResumeScreen extends StatefulWidget {
+class ResumeScreen extends StatelessWidget {
   static const routeName = "/resume";
   const ResumeScreen({super.key});
 
-  @override
-  State<ResumeScreen> createState() => _ResumeScreenState();
-}
-
-class _ResumeScreenState extends State<ResumeScreen> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;

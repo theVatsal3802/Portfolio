@@ -104,38 +104,41 @@ class AboutScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Text(
-                                "General Details",
-                                textScaleFactor: 1,
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .headlineMedium!
-                                    .copyWith(
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .onPrimary,
-                                    ),
-                              ),
-                              const SizedBox(
-                                height: 10,
-                              ),
-                              const AboutWidget(
-                                icon: Icons.school_outlined,
-                                text: Data.study,
-                              ),
-                              const AboutWidget(
-                                icon: Icons.location_on_outlined,
-                                text: Data.location,
-                              ),
-                              const AboutWidget(
-                                icon: FontAwesomeIcons.cakeCandles,
-                                text: Data.dob,
-                              ),
-                            ],
+                          AbsorbPointer(
+                            absorbing: true,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "General Details",
+                                  textScaleFactor: 1,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineMedium!
+                                      .copyWith(
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onPrimary,
+                                      ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                const AboutWidget(
+                                  icon: Icons.school_outlined,
+                                  text: Data.study,
+                                ),
+                                const AboutWidget(
+                                  icon: Icons.location_on_outlined,
+                                  text: Data.location,
+                                ),
+                                const AboutWidget(
+                                  icon: FontAwesomeIcons.cakeCandles,
+                                  text: Data.dob,
+                                ),
+                              ],
+                            ),
                           ),
                           if (ParseFunctions.responsive(context))
                             Column(

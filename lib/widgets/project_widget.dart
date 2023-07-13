@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/utils/data.dart';
 import 'package:portfolio/utils/parse_functions.dart';
 import 'package:portfolio/widgets/rounded_buttons.dart';
 
@@ -9,6 +10,22 @@ class ProjectWidget extends StatelessWidget {
     super.key,
     required this.data,
   });
+
+  List<Widget> getSkills() {
+    List<Widget> skills = [];
+    List<String> s = data["tech"]!.split(", ");
+    for (var skill in s) {
+      skills.add(
+        Image.network(
+          Data.skills[skill]!,
+          height: 32,
+          width: 32,
+          fit: BoxFit.cover,
+        ),
+      );
+    }
+    return skills;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -61,6 +78,11 @@ class ProjectWidget extends StatelessWidget {
                   color: Theme.of(context).colorScheme.background,
                   fontSize: 20,
                 ),
+          ),
+          Wrap(
+            crossAxisAlignment: WrapCrossAlignment.center,
+            alignment: WrapAlignment.center,
+            children: getSkills(),
           ),
           RoundedButton(
             tooltip: "View on Github",

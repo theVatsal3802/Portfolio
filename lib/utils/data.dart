@@ -12,7 +12,7 @@ class Data {
   static const String location = "Jaipur, Rajasthan, India";
 
   static const String resumeLink =
-      "https://drive.google.com/file/d/1Xscl9ina-rZhCGeH1OzI7yXinAvIrSJO/view?usp=sharing";
+      "https://drive.google.com/file/d/1eXCn7c8QnUTb_SeiKJKrAGGZF-cte9jl/view?usp=sharing";
 
   static const List<Map<String, String>> education = [
     {
@@ -45,7 +45,7 @@ class Data {
         {
           "name": "Xero Apps - KiranaFast",
           "description":
-              "Worked with a group of experienced Flutter Developers and implemented Clean Architecture in Flutter. Was also the part of the team that worked on new features as well as bug fixes.",
+              "--> Optimized online store pagination that reduced latency by 62% (loading time decreased from 2 minutes to 45 seconds). \n--> Redesigned the User Interface of the app and the online store by collaborating with the UI/UX team on Adobe XD. \n--> Improved the printing system of the app to provide 14 customisable printing option to the user.",
           "website": "https://www.kiranafast.com/",
           "duration": "Jan 2023 - Present",
           "role": "Flutter Developer Intern"
@@ -56,39 +56,59 @@ class Data {
 
   static const List<Map<String, String>> projects = [
     {
+      "name": "Portfolio",
+      "description":
+          "My Personal Portfolio website made entirely in Flutter. (This Website)",
+      "tech": "Flutter, Dart",
+      "link": "https://github.com/theVatsal3802/Portfolio",
+    },
+    {
+      "name": "Text Emotion Detector",
+      "description":
+          "A text tone detector which detects the emotion in any given text message using Recurrent Neural Network Models in the backend for the detection.",
+      "link": "https://github.com/theVatsal3802/Tone-Detector",
+      "tech": "Flutter, Dart, Python",
+    },
+    {
       "name": "Quinnn",
       "description":
           "This project got was developed for the Google Soution Challenge 2023 and got selected in the top 100 globally. Quinnn is a platform designed to connect and empower individuals in the LGBTQ+ community.",
       "link": "https://github.com/theVatsal3802/Quinnn-App",
+      "tech": "Flutter, Dart, MongoDB",
     },
     {
       "name": "Jingola India",
       "description": "A complete end to end solution for Jingola India Startup",
       "link": "https://github.com/theVatsal3802/Jingola-India",
+      "tech": "Flutter, Dart, Firebase",
     },
     {
       "name": "Attendance Management System Teachers",
       "description":
           "A flutter app to make the process of taking attendance of students easier and fool-proof for the teachers.",
       "link": "https://github.com/theVatsal3802/Attendance-Version-2-Teachers",
+      "tech": "Flutter, Dart, MongoDB",
     },
     {
       "name": "Attendance Management System Students",
       "description":
           "A flutter app to make the process of taking attendance of students easier and fool-proof for the teachers. This is the student side app.",
       "link": "https://github.com/theVatsal3802/Attendance-Version-2-Students",
+      "tech": "Flutter, Dart, MongoDB",
     },
     {
       "name": "Organiz-Em",
       "description":
           "Most of us feel the need to organize our daily tasks. Organiz'Em app is the easiest way to do so.",
       "link": "https://github.com/theVatsal3802/Organiz-Em",
+      "tech": "Flutter, Dart, Firebase",
     },
     {
       "name": "Convertex",
       "description":
           "A Simple Currency Converter using Open Exchange API for conversion.",
       "link": "https://github.com/theVatsal3802/Convertex",
+      "tech": "Flutter, Dart",
     },
   ];
 
@@ -98,4 +118,19 @@ class Data {
   static const String github = "https://github.com/theVatsal3802";
   static const String twitter = "https://twitter.com/adhiya_vatsal_3";
   static const String gmail = "mailto:vatsaladhiya248@gmail.com";
+
+  static const Map<String, String> skills = {
+    "Flutter": "https://img.icons8.com/color/48/null/flutter.png",
+    "Dart": "https://img.icons8.com/color/48/dart.png",
+    "Java": "https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png",
+    "Git": "https://img.icons8.com/color/48/git.png",
+    "GitHub": "https://img.icons8.com/sf-black/64/github.png",
+    "Firebase": "https://img.icons8.com/color/48/firebase.png",
+    "Cpp": "https://img.icons8.com/color/48/c-plus-plus-logo.png",
+    "C": "https://img.icons8.com/fluency/48/c-programming.png",
+    "Python": "https://img.icons8.com/color/48/python--v1.png",
+    "HTML": "https://img.icons8.com/color/48/html-5--v1.png",
+    "CSS": "https://img.icons8.com/color/48/css3.png",
+    "MongoDB": "https://img.icons8.com/color/48/mongodb.png",
+  };
 }

@@ -9,6 +9,16 @@ class ProjectScreen extends StatelessWidget {
   static const routeName = "/projects";
   const ProjectScreen({super.key});
 
+  List<Widget> getProjects() {
+    List<ProjectWidget> projects = [];
+    for (var element in Data.projects) {
+      projects.add(
+        ProjectWidget(data: element),
+      );
+    }
+    return projects;
+  }
+
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -68,26 +78,7 @@ class ProjectScreen extends StatelessWidget {
                       Wrap(
                         alignment: WrapAlignment.center,
                         crossAxisAlignment: WrapCrossAlignment.center,
-                        children: [
-                          ProjectWidget(
-                            data: Data.projects[0],
-                          ),
-                          ProjectWidget(
-                            data: Data.projects[1],
-                          ),
-                          ProjectWidget(
-                            data: Data.projects[2],
-                          ),
-                          ProjectWidget(
-                            data: Data.projects[3],
-                          ),
-                          ProjectWidget(
-                            data: Data.projects[4],
-                          ),
-                          ProjectWidget(
-                            data: Data.projects[5],
-                          ),
-                        ],
+                        children: getProjects(),
                       ),
                     ],
                   ),
