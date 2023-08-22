@@ -12,7 +12,7 @@ class Data {
   static const String location = "Jaipur, Rajasthan, India";
 
   static const String resumeLink =
-      "https://drive.google.com/file/d/1eXCn7c8QnUTb_SeiKJKrAGGZF-cte9jl/view?usp=sharing";
+      "https://drive.google.com/file/d/14Vwv9NjFfD77CwjJTJ4gxdPuF0zKXvai/view?usp=sharing";
 
   static const List<Map<String, String>> education = [
     {
@@ -67,7 +67,7 @@ class Data {
       "description":
           "A text tone detector which detects the emotion in any given text message using Recurrent Neural Network Models in the backend for the detection.",
       "link": "https://github.com/theVatsal3802/Tone-Detector",
-      "tech": "Flutter, Dart, Python",
+      "tech": "Flutter, Dart, Python, Firebase",
     },
     {
       "name": "Quinnn",

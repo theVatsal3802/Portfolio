@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/utils/data.dart';
 import 'package:portfolio/utils/parse_functions.dart';
-import 'package:portfolio/widgets/about_widget.dart';
+import 'package:portfolio/widgets/contact_widget.dart';
 import 'package:portfolio/widgets/side_drawer.dart';
 import 'package:portfolio/widgets/sidebar.dart';
 
@@ -92,28 +92,34 @@ class ContactScreen extends StatelessWidget {
                             children: [
                               AbsorbPointer(
                                 absorbing: true,
-                                child: AboutWidget(
+                                child: ContactWidget(
+                                  handle: Data.phone,
                                   icon: Icons.call,
                                   text: Data.phone,
                                 ),
                               ),
-                              AboutWidget(
+                              ContactWidget(
+                                handle: "Email",
                                 icon: Icons.email_outlined,
                                 text: Data.email,
                               ),
-                              AboutWidget(
+                              ContactWidget(
+                                handle: "GitHub",
                                 icon: FontAwesomeIcons.github,
                                 text: Data.github,
                               ),
-                              AboutWidget(
+                              ContactWidget(
+                                handle: "Instagram",
                                 icon: FontAwesomeIcons.instagram,
                                 text: Data.instagram,
                               ),
-                              AboutWidget(
+                              ContactWidget(
+                                handle: "LinkedIn",
                                 icon: FontAwesomeIcons.linkedin,
                                 text: Data.linkedin,
                               ),
-                              AboutWidget(
+                              ContactWidget(
+                                handle: "Twitter",
                                 icon: FontAwesomeIcons.twitter,
                                 text: Data.twitter,
                               ),
