@@ -16,61 +16,61 @@ class ContactWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    return Container(
-      height: 100,
-      width: ParseFunctions.responsive(context) ? width * 0.3 : width * 0.8,
-      margin: MediaQuery.of(context).size.width > 400
-          ? const EdgeInsets.all(20)
-          : const EdgeInsets.symmetric(vertical: 20),
-      padding: const EdgeInsets.symmetric(
-        vertical: 5,
-        horizontal: 20,
-      ),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
-        boxShadow: const [
-          BoxShadow(
-            color: Colors.white30,
-            blurRadius: 10,
-            blurStyle: BlurStyle.outer,
-          ),
-        ],
-        gradient: const LinearGradient(
-          colors: [
-            Colors.black38,
-            Colors.black26,
-            Colors.white24,
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+    return InkWell(
+      onTap: () async {
+        if (text.startsWith("https") || text.startsWith("mailto")) {
+          await ParseFunctions.launchConnection(
+            text,
+            context,
+          );
+        }
+      },
+      child: Container(
+        height: 100,
+        width: ParseFunctions.responsive(context) ? width * 0.3 : width * 0.8,
+        margin: MediaQuery.of(context).size.width > 400
+            ? const EdgeInsets.all(20)
+            : const EdgeInsets.symmetric(vertical: 20),
+        padding: const EdgeInsets.symmetric(
+          vertical: 5,
+          horizontal: 20,
         ),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          CircleAvatar(
-            radius: 40,
-            backgroundColor: Colors.white12,
-            child: FaIcon(
-              icon,
-              color: Theme.of(context).colorScheme.onPrimary,
-              size: 40,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.white30,
+              blurRadius: 10,
+              blurStyle: BlurStyle.outer,
             ),
+          ],
+          gradient: const LinearGradient(
+            colors: [
+              Colors.black38,
+              Colors.black26,
+              Colors.white24,
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           ),
-          const SizedBox(
-            width: 30,
-          ),
-          Expanded(
-            child: InkWell(
-              onTap: () async {
-                if (text.startsWith("https")) {
-                  await ParseFunctions.launchConnection(
-                    text,
-                    context,
-                  );
-                }
-              },
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 40,
+              backgroundColor: Colors.white12,
+              child: FaIcon(
+                icon,
+                color: Theme.of(context).colorScheme.onPrimary,
+                size: 40,
+              ),
+            ),
+            const SizedBox(
+              width: 30,
+            ),
+            Expanded(
               child: FittedBox(
                 fit: BoxFit.scaleDown,
                 alignment: Alignment.centerLeft,
@@ -84,8 +84,8 @@ class ContactWidget extends StatelessWidget {
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
