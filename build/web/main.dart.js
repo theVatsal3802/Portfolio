@@ -981,7 +981,7 @@ switch(b.a){case 5:case 9:s=A.mD()
 r=A.a2("sRGB")
 if(r==null)r=t.K.a(r)
 s.c.setAttribute("color-interpolation-filters",r)
-s.uM(B.C3,m)
+s.uM(B.C2,m)
 r=A.cb(a.gl(a))
 s.kG(r,"1",l)
 s.pN(l,m,1,0,0,0,6,k)
@@ -7382,7 +7382,7 @@ if(a==="https")return"https"
 if(a==="package")return"package"
 return a},
 agD(a,b,c){if(a==null)return""
-return A.yC(a,b,c,B.Cd,!1,!1)},
+return A.yC(a,b,c,B.Cc,!1,!1)},
 agB(a,b,c,d,e,f){var s,r=e==="file",q=r||f
 if(a==null)return r?"/":""
 else s=A.yC(a,b,c,B.kJ,!0,!0)
@@ -23314,7 +23314,7 @@ l.push(new A.dD(n[0],n[1],n[2],n[3],B.kI[m]))}return l},
 eD(a){var s,r=this.a
 r===$&&A.b()
 r=r.a.getGlyphPositionAtCoordinate(a.a,a.b)
-s=B.Ck[B.c.T(r.affinity.value)]
+s=B.Cj[B.c.T(r.affinity.value)]
 return new A.br(B.c.T(r.pos),s)},
 uC(a){var s,r
 switch(a.b.a){case 0:s=a.a-1
@@ -40983,7 +40983,7 @@ A.px.prototype={
 C(){return"_CornerId."+this.b}}
 A.jc.prototype={}
 A.om.prototype={
-hO(){var s,r,q=this,p=A.asF(B.Cl,new A.VX(q,q.b.gaM().a3(0,q.a.gaM()))),o=q.a
+hO(){var s,r,q=this,p=A.asF(B.Ck,new A.VX(q,q.b.gaM().a3(0,q.a.gaM()))),o=q.a
 o.toString
 s=p.a
 o=q.kW(o,s)
@@ -54672,7 +54672,7 @@ A.iU.prototype={}
 A.Et.prototype={
 ia(a,b,c){var s,r,q,p,o,n=$.az.am$.f.c
 if(n==null||n.e==null)return!1
-for(s=t.r,r=0;r<2;++r){q=B.Cm[r]
+for(s=t.r,r=0;r<2;++r){q=B.Cl[r]
 p=n.e
 p.toString
 o=A.a9w(p,q,s)
@@ -64819,7 +64819,7 @@ if(A.bj(a)){m=A.C(a).p3.f
 m.toString
 m=m.iO(A.C(a).ax.c,B.h0)}else{m=A.C(a).p3.y
 m.toString
-m=m.iO(A.C(a).ax.c,B.h0)}m=A.bi("Hello, my name is Vatsal Adhiya. I am currently studying in IIIT Kota.  I am a third year B.Tech student in the field of Computer Science and Engineering. I am a Flutter developer with a passion for creating innovative mobile apps and a keen interest in machine learning and quantum computing. With strong skills in Flutter development and a desire to stay at the forefront of the industry, I bring responsive and beautiful designs to life. Always eager to learn and take on new challenges, I strive to push the boundaries of mobile development. I am constantly seeking new opportunities to grow and improve as a developer.",i,i,m,B.bP,1)
+m=m.iO(A.C(a).ax.c,B.h0)}m=A.bi("Hello, my name is Vatsal Adhiya. I am currently studying in IIIT Kota.  I am a final year B.Tech student in the field of Computer Science and Engineering. I am a Flutter developer with a passion for creating innovative mobile apps and a keen interest in machine learning and quantum computing. With strong skills in Flutter development and a desire to stay at the forefront of the industry, I bring responsive and beautiful designs to life. Always eager to learn and take on new challenges, I strive to push the boundaries of mobile development. I am constantly seeking new opportunities to grow and improve as a developer.",i,i,m,B.bP,1)
 l=A.a9U(A.C(a).ax.CW,50,50,1)
 k=A.C(a).p3.e
 k.toString
@@ -64885,7 +64885,7 @@ q=q.iO(A.C(a).ax.c,B.e_)}p=t.p
 return A.j1(B.b2,A.a([s,A.cT(o,A.fB(A.ex(A.a([r,B.aa,new A.dj(B.ao,A.bi("Enthusiastic Flutter dev.\nCreating innovative mobile apps and always looking to push boundaries in tech.",o,o,q,B.X,1),o)],p),B.W,B.pH,B.O),o,o),B.n,B.x,o,o,o,m,o,o,o,o,n)],p),B.ba)}}
 A.oE.prototype={
 LT(){var s,r=A.a([],t.yQ)
-for(s=0;s<8;++s)r.push(new A.uu(B.C2[s],null))
+for(s=0;s<8;++s)r.push(new A.uu(B.Cm[s],null))
 return r},
 I(a){var s,r,q,p,o,n,m=null,l=t.w,k=A.b0(a,m,l).w.a.b,j=A.b0(a,m,l).w.a.a
 l=!A.bj(a)?B.du:m
@@ -68295,23 +68295,12 @@ B.BT=A.a(s([B.dI]),t.QP)
 B.BU=A.a(s([B.fm,B.fn]),A.a5("w<qM>"))
 B.BV=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
 B.BW=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
-B.Fs={name:0,description:1,tech:2,link:3}
-B.Ez=new A.aO(B.Fs,["Portfolio","My Personal Portfolio website made entirely in Flutter. (This Website)","Flutter, Dart","https://github.com/theVatsal3802/Portfolio"],t.l)
-B.bI={name:0,description:1,link:2,tech:3}
-B.EM=new A.aO(B.bI,["Text Emotion Detector","A text tone detector which detects the emotion in any given text message using Recurrent Neural Network Models in the backend for the detection.","https://github.com/theVatsal3802/Tone-Detector","Flutter, Dart, Python, Firebase"],t.l)
-B.EJ=new A.aO(B.bI,["Quinnn","This project got was developed for the Google Soution Challenge 2023 and got selected in the top 100 globally. Quinnn is a platform designed to connect and empower individuals in the LGBTQ+ community.","https://github.com/theVatsal3802/Quinnn-App","Flutter, Dart, MongoDB"],t.l)
-B.EI=new A.aO(B.bI,["Jingola India","A complete end to end solution for Jingola India Startup","https://github.com/theVatsal3802/Jingola-India","Flutter, Dart, Firebase"],t.l)
-B.EN=new A.aO(B.bI,["Attendance Management System Teachers","A flutter app to make the process of taking attendance of students easier and fool-proof for the teachers.","https://github.com/theVatsal3802/Attendance-Version-2-Teachers","Flutter, Dart, MongoDB"],t.l)
-B.EL=new A.aO(B.bI,["Attendance Management System Students","A flutter app to make the process of taking attendance of students easier and fool-proof for the teachers. This is the student side app.","https://github.com/theVatsal3802/Attendance-Version-2-Students","Flutter, Dart, MongoDB"],t.l)
-B.EK=new A.aO(B.bI,["Organiz-Em","Most of us feel the need to organize our daily tasks. Organiz'Em app is the easiest way to do so.","https://github.com/theVatsal3802/Organiz-Em","Flutter, Dart, Firebase"],t.l)
-B.EO=new A.aO(B.bI,["Convertex","A Simple Currency Converter using Open Exchange API for conversion.","https://github.com/theVatsal3802/Convertex","Flutter, Dart"],t.l)
-B.C2=A.a(s([B.Ez,B.EM,B.EJ,B.EI,B.EN,B.EL,B.EK,B.EO]),A.a5("w<av<t,t>>"))
-B.C3=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.up)
+B.C2=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.up)
 B.D_=new A.k8("en","US")
 B.kF=A.a(s([B.D_]),t.ss)
 B.ef=A.a(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
 B.kG=A.a(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
-B.Cd=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
+B.Cc=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
 B.h_=new A.fa(0)
 B.k=new A.fa(3)
 B.K=new A.fa(4)
@@ -68321,7 +68310,7 @@ B.kk=new A.fa(8)
 B.kH=A.a(s([B.h_,B.e_,B.h0,B.k,B.K,B.Ak,B.ap,B.Al,B.kk]),A.a5("w<fa>"))
 B.at=new A.vI(0,"upstream")
 B.C=new A.vI(1,"downstream")
-B.Ck=A.a(s([B.at,B.C]),A.a5("w<vI>"))
+B.Cj=A.a(s([B.at,B.C]),A.a5("w<vI>"))
 B.L=new A.hZ(0,"rtl")
 B.p=new A.hZ(1,"ltr")
 B.kI=A.a(s([B.L,B.p]),A.a5("w<hZ>"))
@@ -68333,11 +68322,22 @@ B.w3=new A.px(1,"topRight")
 B.w4=new A.px(2,"bottomLeft")
 B.OD=new A.jc(B.w3,B.w4)
 B.OE=new A.jc(B.w4,B.w3)
-B.Cl=A.a(s([B.OC,B.OF,B.OD,B.OE]),A.a5("w<jc>"))
+B.Ck=A.a(s([B.OC,B.OF,B.OD,B.OE]),A.a5("w<jc>"))
 B.wZ=new A.nb()
 B.i_=new A.Fq(1,"page")
 B.i0=new A.dV(B.J,B.i_)
-B.Cm=A.a(s([B.wZ,B.i0]),A.a5("w<aE>"))
+B.Cl=A.a(s([B.wZ,B.i0]),A.a5("w<aE>"))
+B.Fs={name:0,description:1,tech:2,link:3}
+B.Ez=new A.aO(B.Fs,["Portfolio","My Personal Portfolio website made entirely in Flutter. (This Website)","Flutter, Dart","https://github.com/theVatsal3802/Portfolio"],t.l)
+B.bI={name:0,description:1,link:2,tech:3}
+B.EM=new A.aO(B.bI,["Text Emotion Detector","A text tone detector which detects the emotion in any given text message using Recurrent Neural Network Models in the backend for the detection.","https://github.com/theVatsal3802/Tone-Detector","Flutter, Dart, Python, Firebase"],t.l)
+B.EI=new A.aO(B.bI,["Quinnn","This project was developed for the Google Solution Challenge 2023 and got selected in the top 100 globally. Quinnn is a platform designed to connect and empower individuals in the LGBTQ+ community.","https://github.com/theVatsal3802/Quinnn-App","Flutter, Dart, MongoDB"],t.l)
+B.EJ=new A.aO(B.bI,["Jingola India","A complete end to end solution for Jingola India Startup","https://github.com/theVatsal3802/Jingola-India","Flutter, Dart, Firebase"],t.l)
+B.EN=new A.aO(B.bI,["Attendance Management System Teachers","A flutter app to make the process of taking attendance of students easier and fool-proof for the teachers.","https://github.com/theVatsal3802/Attendance-Version-2-Teachers","Flutter, Dart, MongoDB"],t.l)
+B.EL=new A.aO(B.bI,["Attendance Management System Students","A flutter app to make the process of taking attendance of students easier and fool-proof for the teachers. This is the student side app.","https://github.com/theVatsal3802/Attendance-Version-2-Students","Flutter, Dart, MongoDB"],t.l)
+B.EK=new A.aO(B.bI,["Organiz-Em","Most of us feel the need to organize our daily tasks. Organiz'Em app is the easiest way to do so.","https://github.com/theVatsal3802/Organiz-Em","Flutter, Dart, Firebase"],t.l)
+B.EO=new A.aO(B.bI,["Convertex","A Simple Currency Converter using Open Exchange API for conversion.","https://github.com/theVatsal3802/Convertex","Flutter, Dart"],t.l)
+B.Cm=A.a(s([B.Ez,B.EM,B.EI,B.EJ,B.EN,B.EL,B.EK,B.EO]),A.a5("w<av<t,t>>"))
 B.kJ=A.a(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
 B.kK=A.a(s([0,0,32776,33792,1,10240,0,0]),t.t)
 B.wK=new A.A1(2,"outer")
@@ -68443,7 +68443,7 @@ B.bn=new A.lS(5,"spaceEvenly")
 B.bG=new A.D5(0,"min")
 B.O=new A.D5(1,"max")
 B.hJ={name:0,image:1,degree:2,duration:3,score:4}
-B.EA=new A.aO(B.hJ,["Indian Institute of Information Technology Kota","assets/iiitkota.png","Bachelor's in Technology in\n Computer Science and Engineering","2020 - Present","CGPA 8.39 / 10"],t.l)
+B.EA=new A.aO(B.hJ,["Indian Institute of Information Technology Kota","assets/iiitkota.png","Bachelor's in Technology in\n Computer Science and Engineering","2020 - Present","CGPA 8.38 / 10"],t.l)
 B.EB=new A.aO(B.hJ,["Allen Career Institute, Hiranandani Estate","assets/allen.png","Grade 12","2018 - 2020","88.31 %"],t.l)
 B.EC=new A.aO(B.hJ,["Ryan International School, Goregoan East","assets/ryan.png","Grade 10","2017 - 2018","91.57 %"],t.l)
 B.q1=new A.j(16)
@@ -69193,7 +69193,7 @@ B.eB=new A.aK(2,2)
 B.fq=new A.cz(B.eB,B.eB,B.eB,B.eB)
 B.EU=new A.cr([B.bH,null,B.F3,B.fq,B.F4,null,B.hF,B.fq,B.eu,null],A.a5("cr<k9,cz?>"))
 B.Fu={name:0,description:1,website:2,duration:3,role:4}
-B.EV=new A.aO(B.Fu,["Xero Apps - KiranaFast","--> Optimized online store pagination that reduced latency by 62% (loading time decreased from 2 minutes to 45 seconds). \n--> Redesigned the User Interface of the app and the online store by collaborating with the UI/UX team on Adobe XD. \n--> Improved the printing system of the app to provide 14 customisable printing option to the user.","https://www.kiranafast.com/","Jan 2023 - Present","Flutter Developer Intern"],t.l)
+B.EV=new A.aO(B.Fu,["Xero Apps - KiranaFast","--> Optimized online store pagination that reduced latency by 62% (loading time decreased from 2 minutes to 45 seconds). \n--> Redesigned the User Interface of the app and the online store by collaborating with the UI/UX team on Adobe XD. \n--> Improved the printing system of the app to provide 14 customisable printing option to the user.","https://www.kiranafast.com/","Jan 2023 - Jun 2023","Flutter Developer Intern"],t.l)
 B.hC=new A.aO(B.aH,[],A.a5("aO<fD,N>"))
 B.pL=new A.aO(B.aH,[],A.a5("aO<E,pL>"))
 B.EY=new A.aO(B.aH,[],A.a5("aO<cX,cX>"))
@@ -69268,34 +69268,34 @@ B.CN=A.a(s([B.po,null,null,B.pD]),t.L)
 B.CO=A.a(s([B.pp,null,null,B.pE]),t.L)
 B.CP=A.a(s([B.pq,null,null,B.hp]),t.L)
 B.CQ=A.a(s([B.pr,null,null,B.pF]),t.L)
-B.C5=A.a(s([B.ps,null,null,B.hq]),t.L)
-B.C6=A.a(s([B.pt,null,null,B.hr]),t.L)
-B.C7=A.a(s([B.pu,null,null,B.hs]),t.L)
-B.C8=A.a(s([B.pv,null,null,B.ht]),t.L)
-B.C9=A.a(s([B.pw,null,null,B.hu]),t.L)
-B.Ca=A.a(s([B.px,null,null,B.hv]),t.L)
-B.Cb=A.a(s([B.py,null,null,B.hw]),t.L)
-B.Cc=A.a(s([B.pz,null,null,B.hx]),t.L)
+B.C4=A.a(s([B.ps,null,null,B.hq]),t.L)
+B.C5=A.a(s([B.pt,null,null,B.hr]),t.L)
+B.C6=A.a(s([B.pu,null,null,B.hs]),t.L)
+B.C7=A.a(s([B.pv,null,null,B.ht]),t.L)
+B.C8=A.a(s([B.pw,null,null,B.hu]),t.L)
+B.C9=A.a(s([B.px,null,null,B.hv]),t.L)
+B.Ca=A.a(s([B.py,null,null,B.hw]),t.L)
+B.Cb=A.a(s([B.pz,null,null,B.hx]),t.L)
 B.CW=A.a(s([B.pA,null,null,B.hy]),t.L)
 B.CX=A.a(s([B.pB,null,null,B.hz]),t.L)
 B.CH=A.a(s([B.d5,B.d5,B.eo,null]),t.L)
 B.CY=A.a(s([B.ek,null,B.ek,null]),t.L)
-B.Ce=A.a(s([B.aP,null,null,B.hs]),t.L)
-B.Cf=A.a(s([B.aF,null,null,B.hu]),t.L)
-B.Cg=A.a(s([B.aG,null,null,B.hw]),t.L)
+B.Cd=A.a(s([B.aP,null,null,B.hs]),t.L)
+B.Ce=A.a(s([B.aF,null,null,B.hu]),t.L)
+B.Cf=A.a(s([B.aG,null,null,B.hw]),t.L)
 B.Cp=A.a(s([B.aQ,null,null,B.hy]),t.L)
 B.CD=A.a(s([B.hm,null,null,B.hv]),t.L)
 B.CI=A.a(s([B.d3,B.d3,B.en,null]),t.L)
-B.C4=A.a(s([B.aq,null,null,B.hp]),t.L)
-B.Ch=A.a(s([B.bE,null,null,B.hr]),t.L)
+B.C3=A.a(s([B.aq,null,null,B.hp]),t.L)
+B.Cg=A.a(s([B.bE,null,null,B.hr]),t.L)
 B.CR=A.a(s([B.ej,null,null,B.ho]),t.L)
-B.Ci=A.a(s([B.bF,null,null,B.hx]),t.L)
+B.Ch=A.a(s([B.bF,null,null,B.hx]),t.L)
 B.CE=A.a(s([B.hn,null,null,B.hq]),t.L)
 B.CJ=A.a(s([B.d6,B.d6,B.ep,null]),t.L)
-B.Cj=A.a(s([B.d1,null,null,B.ht]),t.L)
+B.Ci=A.a(s([B.d1,null,null,B.ht]),t.L)
 B.CF=A.a(s([B.d2,null,null,B.hz]),t.L)
 B.CK=A.a(s([B.c8,B.c8,B.d4,null]),t.L)
-B.F_=new A.cr(["*",B.CM,"+",B.CN,"-",B.CO,".",B.CP,"/",B.CQ,"0",B.C5,"1",B.C6,"2",B.C7,"3",B.C8,"4",B.C9,"5",B.Ca,"6",B.Cb,"7",B.Cc,"8",B.CW,"9",B.CX,"Alt",B.CH,"AltGraph",B.CY,"ArrowDown",B.Ce,"ArrowLeft",B.Cf,"ArrowRight",B.Cg,"ArrowUp",B.Cp,"Clear",B.CD,"Control",B.CI,"Delete",B.C4,"End",B.Ch,"Enter",B.CR,"Home",B.Ci,"Insert",B.CE,"Meta",B.CJ,"PageDown",B.Cj,"PageUp",B.CF,"Shift",B.CK],A.a5("cr<t,A<f?>>"))
+B.F_=new A.cr(["*",B.CM,"+",B.CN,"-",B.CO,".",B.CP,"/",B.CQ,"0",B.C4,"1",B.C5,"2",B.C6,"3",B.C7,"4",B.C8,"5",B.C9,"6",B.Ca,"7",B.Cb,"8",B.CW,"9",B.CX,"Alt",B.CH,"AltGraph",B.CY,"ArrowDown",B.Cd,"ArrowLeft",B.Ce,"ArrowRight",B.Cf,"ArrowUp",B.Cp,"Clear",B.CD,"Control",B.CI,"Delete",B.C3,"End",B.Cg,"Enter",B.CR,"Home",B.Ch,"Insert",B.CE,"Meta",B.CJ,"PageDown",B.Ci,"PageUp",B.CF,"Shift",B.CK],A.a5("cr<t,A<f?>>"))
 B.F0=new A.tH(null,null,null,null,null,null,null,null)
 B.yO=new A.z(4284790262)
 B.yG=new A.z(4282557941)

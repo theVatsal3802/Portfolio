@@ -3,7 +3,7 @@ class Data {
   static const String description =
       "Enthusiastic Flutter dev.\nCreating innovative mobile apps and always looking to push boundaries in tech.";
   static const String about =
-      "Hello, my name is Vatsal Adhiya. I am currently studying in IIIT Kota.  I am a third year B.Tech student in the field of Computer Science and Engineering. I am a Flutter developer with a passion for creating innovative mobile apps and a keen interest in machine learning and quantum computing. With strong skills in Flutter development and a desire to stay at the forefront of the industry, I bring responsive and beautiful designs to life. Always eager to learn and take on new challenges, I strive to push the boundaries of mobile development. I am constantly seeking new opportunities to grow and improve as a developer.";
+      "Hello, my name is Vatsal Adhiya. I am currently studying in IIIT Kota.  I am a final year B.Tech student in the field of Computer Science and Engineering. I am a Flutter developer with a passion for creating innovative mobile apps and a keen interest in machine learning and quantum computing. With strong skills in Flutter development and a desire to stay at the forefront of the industry, I bring responsive and beautiful designs to life. Always eager to learn and take on new challenges, I strive to push the boundaries of mobile development. I am constantly seeking new opportunities to grow and improve as a developer.";
 
   static const String email = "vatsaladhiya248@gmail.com";
   static const String dob = "3rd August, 2002";
@@ -35,7 +35,7 @@ class Data {
       "degree":
           "Bachelor's in Technology in\n Computer Science and Engineering",
       "duration": "2020 - Present",
-      "score": "CGPA 8.39 / 10",
+      "score": "CGPA 8.38 / 10",
     },
   ];
 
@@ -47,7 +47,7 @@ class Data {
           "description":
               "--> Optimized online store pagination that reduced latency by 62% (loading time decreased from 2 minutes to 45 seconds). \n--> Redesigned the User Interface of the app and the online store by collaborating with the UI/UX team on Adobe XD. \n--> Improved the printing system of the app to provide 14 customisable printing option to the user.",
           "website": "https://www.kiranafast.com/",
-          "duration": "Jan 2023 - Present",
+          "duration": "Jan 2023 - Jun 2023",
           "role": "Flutter Developer Intern"
         },
       ],
@@ -72,7 +72,7 @@ class Data {
     {
       "name": "Quinnn",
       "description":
-          "This project got was developed for the Google Soution Challenge 2023 and got selected in the top 100 globally. Quinnn is a platform designed to connect and empower individuals in the LGBTQ+ community.",
+          "This project was developed for the Google Solution Challenge 2023 and got selected in the top 100 globally. Quinnn is a platform designed to connect and empower individuals in the LGBTQ+ community.",
       "link": "https://github.com/theVatsal3802/Quinnn-App",
       "tech": "Flutter, Dart, MongoDB",
     },
