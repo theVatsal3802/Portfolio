@@ -4,11 +4,13 @@ import 'package:portfolio/utils/data.dart';
 import 'package:portfolio/utils/parse_functions.dart';
 import 'package:portfolio/widgets/rounded_buttons.dart';
 
-class ProjectWidget extends StatelessWidget {
+class SqaureDataWidget extends StatelessWidget {
   final Map<String, String> data;
-  const ProjectWidget({
+  final bool isProject;
+  const SqaureDataWidget({
     super.key,
     required this.data,
+    required this.isProject,
   });
 
   List<Widget> getSkills() {
@@ -60,7 +62,7 @@ class ProjectWidget extends StatelessWidget {
         children: [
           Text(
             data["name"]!,
-            textScaleFactor: 1,
+            textScaler: TextScaler.noScaling,
             maxLines: 3,
             softWrap: true,
             textAlign: TextAlign.center,
@@ -72,21 +74,23 @@ class ProjectWidget extends StatelessWidget {
           ),
           Text(
             data["description"]!,
-            textScaleFactor: 1,
+            textScaler: TextScaler.noScaling,
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                   color: Theme.of(context).colorScheme.background,
                   fontSize: 20,
                 ),
           ),
-          Wrap(
-            crossAxisAlignment: WrapCrossAlignment.center,
-            alignment: WrapAlignment.center,
-            children: getSkills(),
-          ),
+          if (isProject)
+            Wrap(
+              crossAxisAlignment: WrapCrossAlignment.center,
+              alignment: WrapAlignment.center,
+              children: getSkills(),
+            ),
           RoundedButton(
-            tooltip: "View on Github",
-            iconName: FontAwesomeIcons.github,
+            tooltip: isProject ? "View on Github" : "View on Medium",
+            iconName:
+                isProject ? FontAwesomeIcons.github : FontAwesomeIcons.medium,
             onTap: () async {
               await ParseFunctions.launchConnection(
                 data["link"]!,

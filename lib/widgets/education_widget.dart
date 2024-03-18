@@ -54,7 +54,7 @@ class EducationWidget extends StatelessWidget {
             alignment: Alignment.center,
             child: Text(
               data["degree"]!,
-              textScaleFactor: 1,
+              textScaler: TextScaler.noScaling,
               maxLines: 2,
               softWrap: true,
               textAlign: TextAlign.center,
@@ -65,7 +65,7 @@ class EducationWidget extends StatelessWidget {
           ),
           Text(
             data["name"]!,
-            textScaleFactor: 1,
+            textScaler: TextScaler.noScaling,
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                   color: Theme.of(context).colorScheme.background,
@@ -80,14 +80,14 @@ class EducationWidget extends StatelessWidget {
                 backgroundColor: Theme.of(context).colorScheme.secondary,
                 label: Text(
                   "Score: ${data["score"]!}",
-                  textScaleFactor: 1,
+                  textScaler: TextScaler.noScaling,
                 ),
               ),
               Chip(
                 backgroundColor: Theme.of(context).colorScheme.secondary,
                 label: Text(
                   data["duration"]!,
-                  textScaleFactor: 1,
+                  textScaler: TextScaler.noScaling,
                 ),
               ),
             ],

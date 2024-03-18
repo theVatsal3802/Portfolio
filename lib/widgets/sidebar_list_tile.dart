@@ -24,7 +24,7 @@ class SidebarListTile extends StatelessWidget {
             alignment: Alignment.centerLeft,
             child: Text(
               title,
-              textScaleFactor: 1,
+              textScaler: TextScaler.noScaling,
               style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                     color: Theme.of(context).colorScheme.onPrimary,
                   ),

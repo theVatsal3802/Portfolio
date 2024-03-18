@@ -20,7 +20,7 @@ class ContactScreen extends StatelessWidget {
           ? AppBar(
               title: Text(
                 Data.name,
-                textScaleFactor: 1,
+                textScaler: TextScaler.noScaling,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onPrimary,
                 ),
@@ -53,7 +53,7 @@ class ContactScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Contact",
-                        textScaleFactor: 1,
+                        textScaler: TextScaler.noScaling,
                         style: Theme.of(context)
                             .textTheme
                             .displayMedium!
@@ -73,7 +73,7 @@ class ContactScreen extends StatelessWidget {
                         children: [
                           Text(
                             "You can directly contact me through the following:",
-                            textScaleFactor: 1,
+                            textScaler: TextScaler.noScaling,
                             style: Theme.of(context)
                                 .textTheme
                                 .headlineSmall!
@@ -87,7 +87,7 @@ class ContactScreen extends StatelessWidget {
                             height: 10,
                           ),
                           const Wrap(
-                            alignment: WrapAlignment.center,
+                            alignment: WrapAlignment.start,
                             spacing: 20,
                             children: [
                               AbsorbPointer(
@@ -122,6 +122,11 @@ class ContactScreen extends StatelessWidget {
                                 handle: "Twitter",
                                 icon: FontAwesomeIcons.twitter,
                                 text: Data.twitter,
+                              ),
+                              ContactWidget(
+                                handle: "Medium",
+                                icon: FontAwesomeIcons.medium,
+                                text: Data.medium,
                               ),
                             ],
                           ),

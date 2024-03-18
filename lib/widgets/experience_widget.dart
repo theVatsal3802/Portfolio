@@ -64,7 +64,7 @@ class ExperienceWidget extends StatelessWidget {
                     children: [
                       Text(
                         "${data["role"] ?? ""} at ${data["name"] ?? ""}",
-                        textScaleFactor: 1,
+                        textScaler: TextScaler.noScaling,
                         textAlign: TextAlign.center,
                         style: Theme.of(context)
                             .textTheme
@@ -82,7 +82,7 @@ class ExperienceWidget extends StatelessWidget {
                         padding: const EdgeInsets.all(5),
                         label: Text(
                           data["duration"] ?? "",
-                          textScaleFactor: 1,
+                          textScaler: TextScaler.noScaling,
                           style: Theme.of(context)
                               .textTheme
                               .bodyLarge!
@@ -97,7 +97,7 @@ class ExperienceWidget extends StatelessWidget {
                         ),
                       Text(
                         data["description"] ?? "",
-                        textScaleFactor: 1,
+                        textScaler: TextScaler.noScaling,
                         textAlign: ParseFunctions.responsive(context)
                             ? TextAlign.justify
                             : TextAlign.center,
@@ -127,7 +127,7 @@ class ExperienceWidget extends StatelessWidget {
                         ),
                         label: Text(
                           "Visit Company Website",
-                          textScaleFactor: 1,
+                          textScaler: TextScaler.noScaling,
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Theme.of(context).colorScheme.primary,
@@ -155,7 +155,7 @@ class ExperienceWidget extends StatelessWidget {
                 ),
                 Text(
                   "${data["role"] ?? ""} at ${data["name"] ?? ""}",
-                  textScaleFactor: 1,
+                  textScaler: TextScaler.noScaling,
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                         color: Theme.of(context).colorScheme.onPrimary,
@@ -170,7 +170,7 @@ class ExperienceWidget extends StatelessWidget {
                   padding: const EdgeInsets.all(5),
                   label: Text(
                     "Duration: ${data["duration"]}",
-                    textScaleFactor: 1,
+                    textScaler: TextScaler.noScaling,
                     style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           color: Theme.of(context).colorScheme.onPrimary,
                         ),
@@ -182,7 +182,7 @@ class ExperienceWidget extends StatelessWidget {
                   ),
                 Text(
                   data["description"] ?? "",
-                  textScaleFactor: 1,
+                  textScaler: TextScaler.noScaling,
                   textAlign: ParseFunctions.responsive(context)
                       ? TextAlign.justify
                       : TextAlign.center,
@@ -211,7 +211,7 @@ class ExperienceWidget extends StatelessWidget {
                   ),
                   label: Text(
                     "Visit Company Website",
-                    textScaleFactor: 1,
+                    textScaler: TextScaler.noScaling,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.primary,

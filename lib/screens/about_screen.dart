@@ -23,7 +23,7 @@ class AboutScreen extends StatelessWidget {
           ? AppBar(
               title: Text(
                 Data.name,
-                textScaleFactor: 1,
+                textScaler: TextScaler.noScaling,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onPrimary,
                 ),
@@ -56,7 +56,7 @@ class AboutScreen extends StatelessWidget {
                     children: [
                       Text(
                         "About",
-                        textScaleFactor: 1,
+                        textScaler: TextScaler.noScaling,
                         style: Theme.of(context)
                             .textTheme
                             .displayMedium!
@@ -71,7 +71,7 @@ class AboutScreen extends StatelessWidget {
                       ),
                       Text(
                         Data.about,
-                        textScaleFactor: 1,
+                        textScaler: TextScaler.noScaling,
                         textAlign: TextAlign.justify,
                         style: ParseFunctions.responsive(context)
                             ? Theme.of(context)
@@ -112,7 +112,7 @@ class AboutScreen extends StatelessWidget {
                               children: [
                                 Text(
                                   "General Details",
-                                  textScaleFactor: 1,
+                                  textScaler: TextScaler.noScaling,
                                   style: Theme.of(context)
                                       .textTheme
                                       .headlineMedium!
@@ -145,7 +145,7 @@ class AboutScreen extends StatelessWidget {
                               children: [
                                 Text(
                                   "My Skills",
-                                  textScaleFactor: 1,
+                                  textScaler: TextScaler.noScaling,
                                   style: Theme.of(context)
                                       .textTheme
                                       .headlineMedium!
@@ -168,7 +168,7 @@ class AboutScreen extends StatelessWidget {
                           children: [
                             Text(
                               "My Skills",
-                              textScaleFactor: 1,
+                              textScaler: TextScaler.noScaling,
                               style: Theme.of(context)
                                   .textTheme
                                   .headlineMedium!
@@ -197,7 +197,7 @@ class AboutScreen extends StatelessWidget {
                       ),
                       Text(
                         "Experience",
-                        textScaleFactor: 1,
+                        textScaler: TextScaler.noScaling,
                         style: Theme.of(context)
                             .textTheme
                             .headlineMedium!
@@ -223,7 +223,7 @@ class AboutScreen extends StatelessWidget {
                       ),
                       Text(
                         "Education",
-                        textScaleFactor: 1,
+                        textScaler: TextScaler.noScaling,
                         style: Theme.of(context)
                             .textTheme
                             .headlineMedium!

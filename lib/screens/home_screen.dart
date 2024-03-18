@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   child: Text(
                     Data.name,
-                    textScaleFactor: 1,
+                    textScaler: TextScaler.noScaling,
                     textAlign: TextAlign.center,
                     style: ParseFunctions.responsive(context)
                         ? Theme.of(context).textTheme.displayLarge!.copyWith(
@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(20),
                   child: Text(
                     Data.description,
-                    textScaleFactor: 1,
+                    textScaler: TextScaler.noScaling,
                     textAlign: TextAlign.center,
                     style: ParseFunctions.responsive(context)
                         ? Theme.of(context).textTheme.headlineLarge!.copyWith(

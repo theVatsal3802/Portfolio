@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/screens/about_screen.dart';
+import 'package:portfolio/screens/acievement_screen.dart';
+import 'package:portfolio/screens/blog_screen.dart';
 import 'package:portfolio/screens/contact_screen.dart';
 import 'package:portfolio/screens/home.dart';
 import 'package:portfolio/screens/project_screen.dart';
@@ -25,6 +27,8 @@ class MyApp extends StatelessWidget {
         ResumeScreen.routeName: (context) => const ResumeScreen(),
         ContactScreen.routeName: (context) => const ContactScreen(),
         ProjectScreen.routeName: (context) => const ProjectScreen(),
+        BlogScreen.routeName: (context) => const BlogScreen(),
+        AchievementScreen.routeName: (context) => const AchievementScreen(),
       },
     );
   }

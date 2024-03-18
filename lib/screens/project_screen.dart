@@ -10,10 +10,13 @@ class ProjectScreen extends StatelessWidget {
   const ProjectScreen({super.key});
 
   List<Widget> getProjects() {
-    List<ProjectWidget> projects = [];
+    List<SqaureDataWidget> projects = [];
     for (var element in Data.projects) {
       projects.add(
-        ProjectWidget(data: element),
+        SqaureDataWidget(
+          data: element,
+          isProject: true,
+        ),
       );
     }
     return projects;
@@ -29,7 +32,7 @@ class ProjectScreen extends StatelessWidget {
           ? AppBar(
               title: Text(
                 Data.name,
-                textScaleFactor: 1,
+                textScaler: TextScaler.noScaling,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onPrimary,
                 ),
@@ -62,7 +65,7 @@ class ProjectScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Projects",
-                        textScaleFactor: 1,
+                        textScaler: TextScaler.noScaling,
                         style: Theme.of(context)
                             .textTheme
                             .displayMedium!

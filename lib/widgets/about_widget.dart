@@ -74,7 +74,7 @@ class AboutWidget extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   text,
-                  textScaleFactor: 1,
+                  textScaler: TextScaler.noScaling,
                   maxLines: 1,
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
                         color: Theme.of(context).colorScheme.onPrimary,

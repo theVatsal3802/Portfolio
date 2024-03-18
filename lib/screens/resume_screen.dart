@@ -18,7 +18,7 @@ class ResumeScreen extends StatelessWidget {
           ? AppBar(
               title: Text(
                 Data.name,
-                textScaleFactor: 1,
+                textScaler: TextScaler.noScaling,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onPrimary,
                 ),
@@ -51,7 +51,7 @@ class ResumeScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Resume",
-                        textScaleFactor: 1,
+                        textScaler: TextScaler.noScaling,
                         style: Theme.of(context)
                             .textTheme
                             .displayMedium!
@@ -79,7 +79,7 @@ class ResumeScreen extends StatelessWidget {
                           ),
                           child: Text(
                             "Download Resume",
-                            textScaleFactor: 1,
+                            textScaler: TextScaler.noScaling,
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: Theme.of(context).colorScheme.primary,
@@ -93,7 +93,7 @@ class ResumeScreen extends StatelessWidget {
                       Center(
                         child: Text(
                           "The following preview is in image format, please download the resume using the above button to get .pdf format with selectable text and working links.",
-                          textScaleFactor: 1,
+                          textScaler: TextScaler.noScaling,
                           textAlign: TextAlign.center,
                           style: Theme.of(context)
                               .textTheme

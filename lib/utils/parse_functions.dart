@@ -15,14 +15,17 @@ class ParseFunctions {
   static Future<void> launchConnection(
       String link, BuildContext context) async {
     final url = Uri.parse(link);
-    await launchUrl(url).then(
+    await launchUrl(
+      url,
+      webOnlyWindowName: "_blank",
+    ).then(
       (value) {
         if (!value) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               content: Text(
                 "Could not launch the requested url",
-                textScaleFactor: 1,
+                textScaler: TextScaler.noScaling,
               ),
             ),
           );

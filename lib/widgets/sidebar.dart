@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/screens/about_screen.dart';
+import 'package:portfolio/screens/acievement_screen.dart';
+import 'package:portfolio/screens/blog_screen.dart';
 import 'package:portfolio/screens/contact_screen.dart';
 import 'package:portfolio/screens/home.dart';
 import 'package:portfolio/screens/project_screen.dart';
@@ -29,7 +31,7 @@ class Sidebar extends StatelessWidget {
           ),
           CircleAvatar(
             radius: 88,
-            backgroundColor: const Color(0xff453838),
+            backgroundColor: Theme.of(context).colorScheme.primary,
             child: CircleAvatar(
               radius: 80,
               backgroundColor: Theme.of(context).colorScheme.background,
@@ -44,7 +46,7 @@ class Sidebar extends StatelessWidget {
             alignment: Alignment.center,
             child: Text(
               Data.name,
-              textScaleFactor: 1,
+              textScaler: TextScaler.noScaling,
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                     color: Theme.of(context).colorScheme.onPrimary,
@@ -100,6 +102,26 @@ class Sidebar extends StatelessWidget {
             },
           ),
           SidebarListTile(
+            title: "Blogs",
+            icon: Icons.edit_document,
+            onTap: () {
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                BlogScreen.routeName,
+                (route) => false,
+              );
+            },
+          ),
+          SidebarListTile(
+            title: "Achievements",
+            icon: FontAwesomeIcons.trophy,
+            onTap: () {
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                AchievementScreen.routeName,
+                (route) => false,
+              );
+            },
+          ),
+          SidebarListTile(
             title: "Contact",
             icon: Icons.contact_support_outlined,
             onTap: () {
@@ -113,7 +135,7 @@ class Sidebar extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             child: Text(
               "©️ ${DateTime.now().year} | Vatsal Adhiya",
-              textScaleFactor: 1,
+              textScaler: TextScaler.noScaling,
               style: Theme.of(context)
                   .textTheme
                   .bodyMedium!

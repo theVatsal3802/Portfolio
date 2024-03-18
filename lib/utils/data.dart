@@ -56,6 +56,13 @@ class Data {
 
   static const List<Map<String, String>> projects = [
     {
+      "name": "Manage My Link",
+      "description":
+          "A simple website made using flutter to manage bookmarks which can be accessed from anywhere worldwide.",
+      "tech": "Flutter, Dart, Firebase",
+      "link": "https://github.com/theVatsal3802/Manage-My-Link",
+    },
+    {
       "name": "Portfolio",
       "description":
           "My Personal Portfolio website made entirely in Flutter. (This Website)",
@@ -112,12 +119,40 @@ class Data {
     },
   ];
 
+  static const List<Map<String, String>> blogs = [
+    {
+      "name": "Flutter: Revolutionizing App Development",
+      "description":
+          "A introduction to the Flutter framework developed by Google and released in 2018.",
+      "link":
+          "https://medium.com/@thevatsal3802/flutter-revolutionizing-app-development-6eae0baf044d",
+    },
+    {
+      "name": "How to Integrate Custom APIs with Flutter Frontend",
+      "description":
+          "A descriptive guide on intgrating APIs seamlessly in the Flutter frontend",
+      "link":
+          "https://blog.stackademic.com/how-to-integrate-custom-apis-with-flutter-frontend-30ec540d0192",
+    },
+  ];
+
+  static const List<Map<String, String>> achievements = [
+    {
+      "text":
+          "Shortlisted in the Top 100 finalists for the Google Solution Challenge, 2023. Worked on an LGBTQ+ Social Media App in Flutter.",
+    },
+    {
+      "text": "Achieved GATE rank 313 in GATE CS 2024.",
+    },
+  ];
+
   static const String linkedin =
       "https://www.linkedin.com/in/vatsal-adhiya-206479202";
   static const String instagram = "https://www.instagram.com/thevatsal3802/";
   static const String github = "https://github.com/theVatsal3802";
   static const String twitter = "https://twitter.com/adhiya_vatsal_3";
   static const String gmail = "mailto:vatsaladhiya248@gmail.com";
+  static const String medium = "https://medium.com/@thevatsal3802";
 
   static const Map<String, String> skills = {
     "Flutter": "https://img.icons8.com/color/48/null/flutter.png",
@@ -132,5 +167,6 @@ class Data {
     "HTML": "https://img.icons8.com/color/48/html-5--v1.png",
     "CSS": "https://img.icons8.com/color/48/css3.png",
     "MongoDB": "https://img.icons8.com/color/48/mongodb.png",
+    "Figma": "https://img.icons8.com/color/48/figma--v1.png",
   };
 }

@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
           ? AppBar(
               title: Text(
                 Data.name,
-                textScaleFactor: 1,
+                textScaler: TextScaler.noScaling,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onPrimary,
                 ),
