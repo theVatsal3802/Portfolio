@@ -64,7 +64,7 @@ class BlogScreen extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        "Projects",
+                        "Blogs",
                         textScaler: TextScaler.noScaling,
                         style: Theme.of(context)
                             .textTheme
@@ -72,7 +72,6 @@ class BlogScreen extends StatelessWidget {
                             .copyWith(
                               color: Theme.of(context).colorScheme.onPrimary,
                               fontWeight: FontWeight.bold,
-                              decoration: TextDecoration.underline,
                             ),
                       ),
                       const SizedBox(

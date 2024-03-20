@@ -58,7 +58,6 @@ class ResumeScreen extends StatelessWidget {
                             .copyWith(
                               color: Theme.of(context).colorScheme.onPrimary,
                               fontWeight: FontWeight.bold,
-                              decoration: TextDecoration.underline,
                             ),
                       ),
                       const SizedBox(

@@ -69,7 +69,6 @@ class SqaureDataWidget extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                   color: Theme.of(context).colorScheme.background,
                   fontWeight: FontWeight.bold,
-                  decoration: TextDecoration.underline,
                 ),
           ),
           Text(

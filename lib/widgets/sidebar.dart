@@ -8,6 +8,7 @@ import 'package:portfolio/screens/home.dart';
 import 'package:portfolio/screens/project_screen.dart';
 import 'package:portfolio/screens/resume_screen.dart';
 import 'package:portfolio/utils/data.dart';
+import 'package:portfolio/utils/parse_functions.dart';
 import 'package:portfolio/widgets/connect_icon_row.dart';
 import 'package:portfolio/widgets/sidebar_list_tile.dart';
 
@@ -54,10 +55,12 @@ class Sidebar extends StatelessWidget {
                   ),
             ),
           ),
-          const SizedBox(
-            height: 30,
-          ),
-          const ConnectIconRow(),
+          if (ParseFunctions.responsive(context)) ...[
+            const SizedBox(
+              height: 30,
+            ),
+            const ConnectIconRow(),
+          ],
           const SizedBox(
             height: 30,
           ),

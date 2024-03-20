@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -59,17 +60,11 @@ class AchievementWidget extends StatelessWidget {
             width: 30,
           ),
           Expanded(
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              alignment: Alignment.centerLeft,
-              child: Text(
-                text,
-                textScaler: TextScaler.noScaling,
-                maxLines: 2,
-                style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                      color: Theme.of(context).colorScheme.onPrimary,
-                    ),
-              ),
+            child: AutoSizeText(
+              text,
+              style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                    color: Theme.of(context).colorScheme.onPrimary,
+                  ),
             ),
           ),
         ],
