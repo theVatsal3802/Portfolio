@@ -9,7 +9,12 @@ class Skills extends StatelessWidget {
   List<Widget> getSkills() {
     List<Widget> skill = [];
     for (var s in Data.skills.keys) {
-      skill.add(SkillWidget(imageUrl: Data.skills[s]!));
+      skill.add(
+        SkillWidget(
+          imageUrl: Data.skills[s]!,
+          help: s,
+        ),
+      );
     }
     return skill;
   }
