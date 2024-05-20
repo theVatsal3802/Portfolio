@@ -3,13 +3,13 @@ class Data {
   static const String description =
       "Enthusiastic Flutter dev.\nCreating innovative mobile apps and always looking to push boundaries in tech.";
   static const String about =
-      "Hello, my name is Vatsal Adhiya. I am currently studying in IIIT Kota.  I am a final year B.Tech student in the field of Computer Science and Engineering. I am a Flutter developer with a passion for creating innovative mobile apps and a keen interest in machine learning and quantum computing. With strong skills in Flutter development and a desire to stay at the forefront of the industry, I bring responsive and beautiful designs to life. Always eager to learn and take on new challenges, I strive to push the boundaries of mobile development. I am constantly seeking new opportunities to grow and improve as a developer.";
+      "Hello, my name is Vatsal Adhiya. I completed my B.Tech in CSE from IIIT Kota. I am a Flutter developer with a passion for creating innovative mobile apps and a keen interest in developing user-friendly applications. With strong skills in Flutter development and a desire to stay at the forefront of the industry, I bring responsive and beautiful designs to life. Always eager to learn and take on new challenges, I strive to push the boundaries of mobile development. I am constantly seeking new opportunities to grow and improve as a developer.";
 
   static const String email = "vatsaladhiya248@gmail.com";
   static const String dob = "3rd August, 2002";
-  static const String phone = "8097058898";
+  static const String phone = "+91 8097058898";
   static const String study = "B.Tech in CSE from IIIT Kota";
-  static const String location = "Jaipur, Rajasthan, India";
+  static const String location = "Thane, Maharashtra, India";
 
   static const String resumeLink =
       "https://drive.google.com/file/d/14Vwv9NjFfD77CwjJTJ4gxdPuF0zKXvai/view?usp=sharing";
@@ -34,7 +34,7 @@ class Data {
       "image": "assets/iiitkota.png",
       "degree":
           "Bachelor's in Technology in\n Computer Science and Engineering",
-      "duration": "2020 - Present",
+      "duration": "2020 - 2024",
       "score": "CGPA 8.38 / 10",
     },
   ];
