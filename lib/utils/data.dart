@@ -139,7 +139,7 @@ class Data {
   static const List<Map<String, String>> achievements = [
     {
       "text":
-          "Shortlisted in the Top 100 finalists for the Google Solution Challenge, 2023. Worked on an LGBTQ+ Social Media App in Flutter.",
+          "Shortlisted in the Top 100 finalists for the Google Solution Challenge, 2023. Worked on an LGBTQ+ Social Media App (Quinnn) in Flutter.",
     },
     {
       "text": "Achieved GATE rank 313 in GATE CS 2024.",
