@@ -67,7 +67,7 @@ class SqaureDataWidget extends StatelessWidget {
             softWrap: true,
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                   fontWeight: FontWeight.bold,
                 ),
           ),
@@ -76,7 +76,7 @@ class SqaureDataWidget extends StatelessWidget {
             textScaler: TextScaler.noScaling,
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                   fontSize: 20,
                 ),
           ),

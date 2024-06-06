@@ -12,8 +12,6 @@ ThemeData theme() {
         onSecondary: Colors.black,
         error: Colors.red.shade800,
         onError: Colors.white,
-        background: const Color(0xffd9d9d9),
-        onBackground: Colors.black,
         surface: const Color(0xfff8f8f8),
         onSurface: Colors.black,
       ),

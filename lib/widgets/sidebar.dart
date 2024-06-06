@@ -35,7 +35,7 @@ class Sidebar extends StatelessWidget {
             backgroundColor: Theme.of(context).colorScheme.primary,
             child: CircleAvatar(
               radius: 80,
-              backgroundColor: Theme.of(context).colorScheme.background,
+              backgroundColor: Theme.of(context).colorScheme.surface,
               foregroundImage: const AssetImage("assets/me_circle.png"),
             ),
           ),

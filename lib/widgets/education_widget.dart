@@ -59,7 +59,7 @@ class EducationWidget extends StatelessWidget {
               softWrap: true,
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                    color: Theme.of(context).colorScheme.background,
+                    color: Theme.of(context).colorScheme.surface,
                   ),
             ),
           ),
@@ -68,7 +68,7 @@ class EducationWidget extends StatelessWidget {
             textScaler: TextScaler.noScaling,
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                 ),
           ),
           Wrap(

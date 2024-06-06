@@ -91,7 +91,7 @@ class AboutScreen extends StatelessWidget {
                         height: 30,
                       ),
                       Divider(
-                        color: Theme.of(context).colorScheme.background,
+                        color: Theme.of(context).colorScheme.surface,
                         endIndent: 50,
                         indent: 50,
                         thickness: 1,
@@ -186,7 +186,7 @@ class AboutScreen extends StatelessWidget {
                         height: 30,
                       ),
                       Divider(
-                        color: Theme.of(context).colorScheme.background,
+                        color: Theme.of(context).colorScheme.surface,
                         endIndent: 50,
                         indent: 50,
                         thickness: 1,
@@ -212,7 +212,7 @@ class AboutScreen extends StatelessWidget {
                         height: 30,
                       ),
                       Divider(
-                        color: Theme.of(context).colorScheme.background,
+                        color: Theme.of(context).colorScheme.surface,
                         endIndent: 50,
                         indent: 50,
                         thickness: 1,
