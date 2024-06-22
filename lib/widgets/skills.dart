@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/utils/data.dart';
-import 'package:portfolio/utils/parse_functions.dart';
 import 'package:portfolio/widgets/skill_widget.dart';
 
 class Skills extends StatelessWidget {
@@ -22,9 +21,7 @@ class Skills extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: ParseFunctions.responsive(context)
-          ? MediaQuery.of(context).size.width * 0.3
-          : MediaQuery.of(context).size.width * 0.9,
+      width: MediaQuery.of(context).size.width * 0.7,
       child: Wrap(
         alignment: WrapAlignment.center,
         children: getSkills(),

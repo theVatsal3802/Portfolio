@@ -99,89 +99,26 @@ class AboutScreen extends StatelessWidget {
                       const SizedBox(
                         height: 30,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          AbsorbPointer(
-                            absorbing: true,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "General Details",
-                                  textScaler: TextScaler.noScaling,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .headlineMedium!
-                                      .copyWith(
-                                        color: Theme.of(context)
-                                            .colorScheme
-                                            .onPrimary,
-                                      ),
+                          Text(
+                            "My Skills",
+                            textScaler: TextScaler.noScaling,
+                            style: Theme.of(context)
+                                .textTheme
+                                .headlineMedium!
+                                .copyWith(
+                                  color:
+                                      Theme.of(context).colorScheme.onPrimary,
                                 ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                const AboutWidget(
-                                  icon: Icons.school_outlined,
-                                  text: Data.study,
-                                ),
-                                const AboutWidget(
-                                  icon: Icons.location_on_outlined,
-                                  text: Data.location,
-                                ),
-                                const AboutWidget(
-                                  icon: FontAwesomeIcons.cakeCandles,
-                                  text: Data.dob,
-                                ),
-                              ],
-                            ),
                           ),
-                          if (ParseFunctions.responsive(context))
-                            Column(
-                              children: [
-                                Text(
-                                  "My Skills",
-                                  textScaler: TextScaler.noScaling,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .headlineMedium!
-                                      .copyWith(
-                                        color: Theme.of(context)
-                                            .colorScheme
-                                            .onPrimary,
-                                      ),
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                const Skills(),
-                              ],
-                            ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          const Skills(),
                         ],
                       ),
-                      if (!ParseFunctions.responsive(context))
-                        Column(
-                          children: [
-                            Text(
-                              "My Skills",
-                              textScaler: TextScaler.noScaling,
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .headlineMedium!
-                                  .copyWith(
-                                    color:
-                                        Theme.of(context).colorScheme.onPrimary,
-                                  ),
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            const Skills(),
-                          ],
-                        ),
                       const SizedBox(
                         height: 30,
                       ),
@@ -241,6 +178,59 @@ class AboutScreen extends StatelessWidget {
                           ),
                           EducationWidget(
                             data: Data.education[2],
+                          ),
+                          EducationWidget(
+                            data: Data.education[3],
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      Divider(
+                        color: Theme.of(context).colorScheme.surface,
+                        endIndent: 50,
+                        indent: 50,
+                        thickness: 1,
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      Text(
+                        "General Details",
+                        textScaler: TextScaler.noScaling,
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineMedium!
+                            .copyWith(
+                              color: Theme.of(context).colorScheme.onPrimary,
+                            ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      const Wrap(
+                        children: [
+                          AbsorbPointer(
+                            absorbing: true,
+                            child: AboutWidget(
+                              icon: Icons.school_outlined,
+                              text: Data.study,
+                            ),
+                          ),
+                          AbsorbPointer(
+                            absorbing: true,
+                            child: AboutWidget(
+                              icon: Icons.location_on_outlined,
+                              text: Data.location,
+                            ),
+                          ),
+                          AbsorbPointer(
+                            absorbing: true,
+                            child: AboutWidget(
+                              icon: FontAwesomeIcons.cakeCandles,
+                              text: Data.dob,
+                            ),
                           ),
                         ],
                       ),

@@ -8,19 +8,27 @@ class Data {
   static const String email = "vatsaladhiya248@gmail.com";
   static const String dob = "3rd August, 2002";
   static const String phone = "+91 8097058898";
-  static const String study = "B.Tech in CSE from IIIT Kota";
+  static const String study = "M.Tech in CSE from IIT Kharagpur";
   static const String location = "Thane, Maharashtra, India";
 
   static const String resumeLink =
-      "https://drive.google.com/file/d/14Vwv9NjFfD77CwjJTJ4gxdPuF0zKXvai/view?usp=sharing";
+      "https://drive.google.com/file/d/1LPE6MmlGxLOtFRU5GGCIO96rMARtHm0h/view?usp=sharing";
 
   static const List<Map<String, String>> education = [
     {
-      "name": "Ryan International School, Goregoan East",
-      "image": "assets/ryan.png",
-      "degree": "Grade 10",
-      "duration": "2017 - 2018",
-      "score": "91.57 %",
+      "name": "Indian Institute of Technology Kharagpur",
+      "image": "assets/iitkgp.jpg",
+      "degree": "Master's of Technology in\n Computer Science and Engineering",
+      "duration": "2024 - 2026",
+      "score": "Not started",
+    },
+    {
+      "name": "Indian Institute of Information Technology Kota",
+      "image": "assets/iiitkota.png",
+      "degree":
+          "Bachelor's in Technology in\n Computer Science and Engineering",
+      "duration": "2020 - 2024",
+      "score": "CGPA 8.37 / 10",
     },
     {
       "name": "Allen Career Institute, Hiranandani Estate",
@@ -30,12 +38,11 @@ class Data {
       "score": "88.31 %",
     },
     {
-      "name": "Indian Institute of Information Technology Kota",
-      "image": "assets/iiitkota.png",
-      "degree":
-          "Bachelor's in Technology in\n Computer Science and Engineering",
-      "duration": "2020 - 2024",
-      "score": "CGPA 8.38 / 10",
+      "name": "Ryan International School, Goregoan East",
+      "image": "assets/ryan.png",
+      "degree": "Grade 10",
+      "duration": "2017 - 2018",
+      "score": "91.57 %",
     },
   ];
 
@@ -160,12 +167,16 @@ class Data {
     "Git": "https://img.icons8.com/color/48/git.png",
     "GitHub": "https://img.icons8.com/sf-black/64/github.png",
     "Firebase": "https://img.icons8.com/color/48/firebase.png",
-    "Cpp": "https://img.icons8.com/color/48/c-plus-plus-logo.png",
-    "C": "https://img.icons8.com/fluency/48/c-programming.png",
-    "Python": "https://img.icons8.com/color/48/python--v1.png",
     "HTML": "https://img.icons8.com/color/48/html-5--v1.png",
     "CSS": "https://img.icons8.com/color/48/css3.png",
     "MongoDB": "https://img.icons8.com/color/48/mongodb.png",
+    "JavaScript": "https://img.icons8.com/color/48/javascript--v1.png",
+    "NodeJS": "https://img.icons8.com/fluency/48/node-js.png",
+    "ExpressJS": "https://img.icons8.com/color/48/express-js.png",
+    "EJS": "https://img.icons8.com/color/48/clr_ejs_1.png",
+    "Cpp": "https://img.icons8.com/color/48/c-plus-plus-logo.png",
+    "C": "https://img.icons8.com/fluency/48/c-programming.png",
+    "Python": "https://img.icons8.com/color/48/python--v1.png",
     "Figma": "https://img.icons8.com/color/48/figma--v1.png",
   };
 }
