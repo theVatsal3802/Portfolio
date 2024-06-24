@@ -137,7 +137,7 @@ class Data {
     {
       "name": "How to Integrate Custom APIs with Flutter Frontend",
       "description":
-          "A descriptive guide on intgrating APIs seamlessly in the Flutter frontend",
+          "A descriptive guide on integrating APIs seamlessly in the Flutter frontend",
       "link":
           "https://blog.stackademic.com/how-to-integrate-custom-apis-with-flutter-frontend-30ec540d0192",
     },
