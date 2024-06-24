@@ -17,7 +17,7 @@ class Data {
   static const List<Map<String, String>> education = [
     {
       "name": "Indian Institute of Technology Kharagpur",
-      "image": "assets/iitkgp.jpg",
+      "image": "assets/iitkgp.png",
       "degree": "Master's of Technology in\n Computer Science and Engineering",
       "duration": "2024 - 2026",
       "score": "Not started",

@@ -18,19 +18,6 @@ class ParseFunctions {
     await launchUrl(
       url,
       webOnlyWindowName: "_blank",
-    ).then(
-      (value) {
-        if (!value) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text(
-                "Could not launch the requested url",
-                textScaler: TextScaler.noScaling,
-              ),
-            ),
-          );
-        }
-      },
     );
   }
 }

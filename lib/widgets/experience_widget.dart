@@ -95,15 +95,21 @@ class ExperienceWidget extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                      Text(
-                        data["description"] ?? "",
-                        textScaler: TextScaler.noScaling,
-                        textAlign: ParseFunctions.responsive(context)
-                            ? TextAlign.justify
-                            : TextAlign.center,
-                        style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                              color: Theme.of(context).colorScheme.onPrimary,
-                            ),
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          data["description"] ?? "",
+                          textScaler: TextScaler.noScaling,
+                          textAlign: ParseFunctions.responsive(context)
+                              ? TextAlign.justify
+                              : TextAlign.center,
+                          style: Theme.of(context)
+                              .textTheme
+                              .titleLarge!
+                              .copyWith(
+                                color: Theme.of(context).colorScheme.onPrimary,
+                              ),
+                        ),
                       ),
                       if (ParseFunctions.responsive(context))
                         const SizedBox(

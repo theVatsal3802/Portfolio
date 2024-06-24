@@ -42,12 +42,16 @@ class EducationWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
-            data["image"]!,
-            height: 100,
-            width: 100,
-            fit: BoxFit.contain,
-            filterQuality: FilterQuality.high,
+          CircleAvatar(
+            backgroundColor: Colors.white,
+            radius: 64,
+            child: Image.asset(
+              data["image"]!,
+              height: 100,
+              width: 100,
+              fit: BoxFit.contain,
+              filterQuality: FilterQuality.high,
+            ),
           ),
           FittedBox(
             fit: BoxFit.scaleDown,
