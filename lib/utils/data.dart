@@ -1,9 +1,9 @@
 class Data {
   static const String name = "Vatsal Adhiya";
   static const String description =
-      "Enthusiastic Flutter dev.\nCreating innovative mobile apps and always looking to push boundaries in tech.";
+      "Enthusiastic Software developer.\nCreating innovative solutions and always looking to push boundaries in tech.";
   static const String about =
-      "Hello, my name is Vatsal Adhiya. I completed my B.Tech in CSE from IIIT Kota. I am a Flutter developer with a passion for creating innovative mobile apps and a keen interest in developing user-friendly applications. With strong skills in Flutter development and a desire to stay at the forefront of the industry, I bring responsive and beautiful designs to life. Always eager to learn and take on new challenges, I strive to push the boundaries of mobile development. I am constantly seeking new opportunities to grow and improve as a developer.";
+      "Hello, my name is Vatsal Adhiya. I am a first year M.Tech student in the deaprtment of Computer Science and Engineering at IIT Kharagpur. I completed my B.Tech in CSE from IIIT Kota. I am a software developer with a passion for creating innovative softwares and a keen interest in developing user-friendly applications. With strong skills in software development and a desire to stay at the forefront of the industry, I bring responsive and beautiful designs to life. Always eager to learn and take on new challenges, I strive to push the boundaries of software development. I am constantly seeking new opportunities to grow and improve as a developer.";
 
   static const String email = "vatsaladhiya248@gmail.com";
   static const String dob = "3rd August, 2002";
@@ -178,5 +178,17 @@ class Data {
     "C": "https://img.icons8.com/fluency/48/c-programming.png",
     "Python": "https://img.icons8.com/color/48/python--v1.png",
     "Figma": "https://img.icons8.com/color/48/figma--v1.png",
+    "PostgreSQL": "https://img.icons8.com/color/48/postgreesql.png",
+    "MySQL":
+        "https://img.icons8.com/external-those-icons-flat-those-icons/48/external-MySQL-programming-and-development-those-icons-flat-those-icons.png",
+    "Spring Boot": "https://img.icons8.com/offices/48/spring-logo.png",
+    "React JS": "https://img.icons8.com/color/48/react-native.png",
+    "Redis": "https://img.icons8.com/color/48/redis--v1.png",
+    "DSA":
+        "https://img.icons8.com/external-flaticons-flat-flat-icons/48/external-algorithms-data-analytics-flaticons-flat-flat-icons.png",
+    "System Design": "https://img.icons8.com/ios-filled/48/imac-settings.png",
+    "OOPS":
+        "https://img.icons8.com/external-outline-black-m-oki-orlando/48/external-object-oriented-programming-programming-outline-outline-black-m-oki-orlando.png",
+    "DBMS": "https://img.icons8.com/fluency/48/database--v1.png",
   };
 }

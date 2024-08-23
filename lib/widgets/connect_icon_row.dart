@@ -18,16 +18,6 @@ class ConnectIconRow extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             RoundedButton(
-              tooltip: "LinkedIn",
-              iconName: FontAwesomeIcons.linkedin,
-              onTap: () async {
-                await ParseFunctions.launchConnection(
-                  Data.linkedin,
-                  context,
-                );
-              },
-            ),
-            RoundedButton(
               tooltip: "Gmail",
               iconName: Icons.email,
               onTap: () async {
@@ -38,11 +28,11 @@ class ConnectIconRow extends StatelessWidget {
               },
             ),
             RoundedButton(
-              tooltip: "Instagram",
-              iconName: FontAwesomeIcons.instagram,
+              tooltip: "LinkedIn",
+              iconName: FontAwesomeIcons.linkedin,
               onTap: () async {
                 await ParseFunctions.launchConnection(
-                  Data.instagram,
+                  Data.linkedin,
                   context,
                 );
               },
@@ -63,6 +53,16 @@ class ConnectIconRow extends StatelessWidget {
               onTap: () async {
                 await ParseFunctions.launchConnection(
                   Data.twitter,
+                  context,
+                );
+              },
+            ),
+            RoundedButton(
+              tooltip: "Instagram",
+              iconName: FontAwesomeIcons.instagram,
+              onTap: () async {
+                await ParseFunctions.launchConnection(
+                  Data.instagram,
                   context,
                 );
               },
