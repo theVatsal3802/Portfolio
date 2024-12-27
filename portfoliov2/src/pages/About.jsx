@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <section id="about" className="text-white p-8">
-        <h2 className="text-6xl font-bold mb-8">
+        <h2 className="text-4xl md:text-7xl font-bold mb-8 text-center mx-auto">
           About <span className="text-emerald-300">Me</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -59,14 +59,7 @@ export default function About() {
           </AboutSectionRowTwo>
 
           <AboutSectionRowTwo title={data.rowTwo.second.title}>
-            <div className="relative rounded-lg p-4 h-[300px] overflow-hidden">
-              <img
-                src={data.achievementImg}
-                alt={data.rowTwo.second.title}
-                className="absolute inset-0 w-full h-full object-contain"
-              />
-            </div>
-            <ul>
+            <ul className="list-disc">
               {data.achievement.map((achievementName, index) => (
                 <div key={index}>
                   <li>{achievementName}</li>
@@ -74,6 +67,13 @@ export default function About() {
                 </div>
               ))}
             </ul>
+            <div className="relative rounded-lg p-4 h-[300px] overflow-hidden">
+              <img
+                src={data.achievementImg}
+                alt={data.rowTwo.second.title}
+                className="absolute inset-0 w-full h-full object-contain"
+              />
+            </div>
           </AboutSectionRowTwo>
         </div>
       </section>

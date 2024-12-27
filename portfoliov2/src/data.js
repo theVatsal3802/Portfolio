@@ -16,8 +16,8 @@ export const data = {
         { title: "Experience", path: "#experience" },
         { title: "Projects", path: "#projects" },
         { title: "Skills", path: "#skills" },
-        { title: "Contact", path: "#contact" },
         { title: "View Resume", path: "https://drive.google.com/file/d/1LPE6MmlGxLOtFRU5GGCIO96rMARtHm0h/view?usp=drive_link", isRedirectLink: true },
+        { title: "Contact", path: "mailto:vatsaladhiya248@gmail.com" },
     ],
 
     // Contact
@@ -52,7 +52,7 @@ export const data = {
     buttons: {
         heroContactMeButton: {
             title: "Contact Me",
-            path: "#contact",
+            path: "mailto:vatsaladhiya248@gmail.com",
         },
         heroViewProjectsButton: {
             title: "View Projects",
@@ -129,8 +129,8 @@ export const data = {
     achievementImg: achievementImage,
 
     achievement: [
-        "1. Achieved AIR 313 (99.74 percentile) out of a total of 150,000 aspirants in GATE 2024.",
-        "2. Shortlisted in the Top 100 finalists for the Google Solution Challenge, 2023. Worked on an LGBTQ + Social Media App in Flutter."
+        "Achieved AIR 313 (99.74 percentile) out of a total of 150,000 aspirants in GATE 2024.",
+        "Shortlisted in the Top 100 finalists for the Google Solution Challenge, 2023. Worked on an LGBTQ + Social Media App in Flutter."
     ],
 
     experience: [

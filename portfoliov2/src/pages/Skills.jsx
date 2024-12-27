@@ -20,9 +20,9 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-12 mx-auto text-center md:py-24 max-w-[1200px]"
+      className="py-12 mx-auto text-center md:py-24 max-w-full"
     >
-      <h2 className="text-7xl text-gray-100 font-bold mb-20">
+      <h2 className="text-4xl md:text-7xl text-gray-100 font-bold mb-20 px-4">
         Skills and <span className="text-emerald-300">Technologies</span>
       </h2>
       <div ref={ref} className="flex flex-wrap justify-center gap-8">
@@ -43,7 +43,7 @@ export default function Skills() {
                 transition: { duration: 1.5 },
               },
             }}
-            className="bg-white/10, flex flex-col bg-white/30 items-center justify-center w-[150px] h-[150px] rounded-xl p-4 shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            className="bg-white/10, flex flex-col bg-white/30 items-center justify-center w-[150px] h-[150px] rounded-xl p-4 shadow-lg hover:bg-white/60 transition-colors duration-300"
           >
             <div className={`mb-4`}>
               <img src={item.link} alt={item.name} />

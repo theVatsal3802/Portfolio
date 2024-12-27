@@ -1,8 +1,4 @@
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { data } from "../data";
@@ -13,7 +9,7 @@ export default function Footer() {
       <div className="mx-auto px-4 max-w-[1200px]">
         <div className="flex items-center md:justify-between flex-col md:flex-row justify-center text-center">
           <div className="flex flex-col">
-            <h2 className="text-2xl block font-bold mb-10 md:text-7xl text-white/50">
+            <h2 className="text-4xl block font-bold mb-10 md:text-7xl text-white/50">
               <span className="text-emerald-400">Get in </span>touch
             </h2>
             <a
@@ -71,7 +67,7 @@ export default function Footer() {
                 <AiOutlineTwitter size={30} />
               </a>
             </li>
-            <li key={4}>
+            {/* <li key={4}>
               <a
                 href={data.contact.instagram.link}
                 target="_blank"
@@ -80,7 +76,7 @@ export default function Footer() {
               >
                 <AiFillInstagram size={30} />
               </a>
-            </li>
+            </li> */}
             <li key={5}>
               <a
                 href={data.contact.medium.link}

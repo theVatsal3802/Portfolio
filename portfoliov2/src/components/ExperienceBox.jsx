@@ -25,7 +25,7 @@ export default function ExperienceBox({
         </div>
         <div className="flex flex-col my-2 items-center md:items-end">
           {certificate && (
-            <ElevatedButton link={certificate}>
+            <ElevatedButton link={certificate} className="min-w-fit">
               <span className="mr-2">
                 <HiOutlineExternalLink size={20} />
               </span>

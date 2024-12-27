@@ -55,7 +55,7 @@ export default function Navbar() {
             <li key={index}>
               <a
                 href={link.path}
-                className={`text-5xl ${
+                className={`text-3xl ${
                   link.isRedirectLink
                     ? "text-emerald-300 hover:text-emerald-600"
                     : "hover:text-white/50"
