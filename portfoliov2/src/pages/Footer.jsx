@@ -5,7 +5,7 @@ import { data } from "../data";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="py-8">
+    <footer id="contact" className="py-8 z-10">
       <div className="mx-auto px-4 max-w-[1200px]">
         <div className="flex items-center md:justify-between flex-col md:flex-row justify-center text-center">
           <div className="flex flex-col">
