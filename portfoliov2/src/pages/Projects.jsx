@@ -1,25 +1,17 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
 import { AiFillGithub } from "react-icons/ai";
-import { FiChevronDown } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import ElevatedButton from "../components/ElevatedButton";
 import OutlinedButton from "../components/OutlinedButton";
 import { data } from "../data";
 
 export default function Projects() {
-  const [expandedIndex, setExpandedIndex] = useState(null);
-
-  function toggleIndex(index) {
-    setExpandedIndex(expandedIndex === index ? null : index);
-  }
-
   return (
     <div className="text-white py-12 md:py-24 px-8" id="projects">
       <h2 className="text-4xl md:text-7xl font-bold mb-16 text-emerald-300 mx-auto text-center">
         Projects
       </h2>
-      <div className="container mx-auto space-y-8">
+      <div className="container grid grid-cols-1 md:grid-cols-3 mx-auto space-8">
         {data.projects.map((project, index) => (
           <motion.div
             key={index}
@@ -27,9 +19,9 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-white/5 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            className="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 m-4"
           >
-            <div
+            {/* <div
               className="p-6 flex justify-between items-center cursor-pointer bg-black/20 border border-white/10"
               onClick={() => toggleIndex(index)}
             >
@@ -86,7 +78,38 @@ export default function Projects() {
                   </div>
                 </motion.div>
               )}
-            </AnimatePresence>
+            </AnimatePresence> */}
+            <div className="flex flex-col items-center text-center border border-white/20 hover:bg-white/5 rounded-3xl p-4">
+              <h3 className="text-2xl md:text-3xl text-center font-bold mb-2 text-emerald-300">
+                {project.title}
+              </h3>
+              <div className="mt-4">
+                <p className="text-xl text-white mb-4">{project.desc}</p>
+                <p className="text-xl text-emerald-300 md:font-medium mb-2">
+                  Tech-stack: {project.stack}
+                </p>
+              </div>
+              <p className="text-xl text-white/90 font-bold mb-4  capitalize">
+                Type: {project.type}
+              </p>
+              <OutlinedButton link={project.git}>
+                <span className="mr-2">
+                  <AiFillGithub size={30} />
+                </span>
+                {" View Source code"}
+              </OutlinedButton>
+              {project.link && (
+                <>
+                  <div className="mt-4"></div>
+                  <ElevatedButton link={project.link}>
+                    <span className="mr-2">
+                      <HiOutlineExternalLink size={30} />
+                    </span>
+                    {" View Project"}
+                  </ElevatedButton>
+                </>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>

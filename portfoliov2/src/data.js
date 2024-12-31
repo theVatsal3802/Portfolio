@@ -17,7 +17,7 @@ export const data = {
         { title: "Projects", path: "#projects" },
         { title: "Skills", path: "#skills" },
         { title: "View Resume", path: "https://drive.google.com/file/d/1LPE6MmlGxLOtFRU5GGCIO96rMARtHm0h/view?usp=drive_link", isRedirectLink: true },
-        { title: "Contact", path: "mailto:vatsaladhiya248@gmail.com" },
+        { title: "Contact", path: "#contact" },
     ],
 
     // Contact
@@ -52,7 +52,7 @@ export const data = {
     buttons: {
         heroContactMeButton: {
             title: "Contact Me",
-            path: "mailto:vatsaladhiya248@gmail.com",
+            path: "#contact",
         },
         heroViewProjectsButton: {
             title: "View Projects",
@@ -230,116 +230,126 @@ export const data = {
         },
     ],
 
-    skills: [
-        {
-            name: "Spring Boot",
-            link: "https://img.icons8.com/offices/48/spring-logo.png",
+    skills: {
+        frontend: {
+            name: "Frontend",
+            skills: [
+                {
+                    name: "React JS",
+                    link: "https://img.icons8.com/color/48/react-native.png",
+                },
+                {
+                    name: "Tailwind CSS",
+                    link: "https://img.icons8.com/color/48/tailwindcss.png",
+                },
+                {
+                    name: "Flutter",
+                    link: "https://img.icons8.com/color/48/null/flutter.png",
+                },
+                {
+                    name: "EJS",
+                    link: "https://img.icons8.com/color/48/clr_ejs_1.png",
+                },
+                {
+                    name: "CSS",
+                    link: "https://img.icons8.com/color/48/css3.png",
+                },
+            ],
         },
-        {
-            name: "Java",
-            link: "https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png",
-        },
-        {
-            name: "React JS",
-            link: "https://img.icons8.com/color/48/react-native.png",
-        },
-        {
-            name: "Tailwind CSS",
-            link: "https://img.icons8.com/color/48/tailwindcss.png",
-        },
-        {
-            name: "Redis",
-            link: "https://img.icons8.com/color/48/redis--v1.png",
-        },
-        {
-            name: "Flutter",
-            link: "https://img.icons8.com/color/48/null/flutter.png",
-        },
-        {
-            name: "Dart",
-            link: "https://img.icons8.com/color/48/dart.png",
-        },
-        {
-            name: "JavaScript",
-            link: "https://img.icons8.com/color/48/javascript--v1.png",
-        },
-        {
-            name: "NodeJS",
-            link: "https://img.icons8.com/fluency/48/node-js.png",
-        },
-        {
-            name: "ExpressJS",
-            link: "https://img.icons8.com/color/48/express-js.png",
-        },
-        {
-            name: "EJS",
-            link: "https://img.icons8.com/color/48/clr_ejs_1.png",
-        },
-        {
-            name: "Git",
-            link: "https://img.icons8.com/color/48/git.png",
-        },
-        {
-            name: "GitHub",
-            link: "https://img.icons8.com/sf-black/64/github.png",
-        },
-        {
-            name: "Firebase",
-            link: "https://img.icons8.com/color/48/firebase.png",
-        },
-        {
-            name: "HTML",
-            link: "https://img.icons8.com/color/48/html-5--v1.png",
-        },
-        {
-            name: "CSS",
-            link: "https://img.icons8.com/color/48/css3.png",
-        },
-        {
-            name: "MongoDB",
-            link: "https://img.icons8.com/color/48/mongodb.png",
-        },
-        {
-            name: "Cpp",
-            link: "https://img.icons8.com/color/48/c-plus-plus-logo.png",
-        },
-        {
-            name: "C",
-            link: "https://img.icons8.com/fluency/48/c-programming.png",
-        },
-        {
-            name: "Python",
-            link: "https://img.icons8.com/color/48/python--v1.png",
-        },
-        {
-            name: "Figma",
-            link: "https://img.icons8.com/color/48/figma--v1.png",
-        },
-        {
-            name: "PostgreSQL",
-            link: "https://img.icons8.com/color/48/postgreesql.png",
-        },
-        {
-            name: "MySQL",
-            link: "https://img.icons8.com/external-those-icons-flat-those-icons/48/external-MySQL-programming-and-development-those-icons-flat-those-icons.png"
-        },
-        {
-            name: "DSA",
-            link: "https://img.icons8.com/external-flaticons-flat-flat-icons/48/external-algorithms-data-analytics-flaticons-flat-flat-icons.png"
-        },
-        {
-            name: "System Design",
-            link: "https://img.icons8.com/ios-filled/48/imac-settings.png",
-        },
-        {
-            name: "OOPS",
-            link: "https://img.icons8.com/external-outline-black-m-oki-orlando/48/external-object-oriented-programming-programming-outline-outline-black-m-oki-orlando.png",
-        },
-        {
-            name: "DBMS",
-            link: "https://img.icons8.com/fluency/48/database--v1.png",
+        backend: {
+            name: "Backend",
+            skills: [
+                {
+                    name: "Spring Boot",
+                    link: "https://img.icons8.com/offices/48/spring-logo.png",
+                },
+                {
+                    name: "NodeJS",
+                    link: "https://img.icons8.com/fluency/48/node-js.png",
+                },
+                {
+                    name: "ExpressJS",
+                    link: "https://img.icons8.com/color/48/express-js.png",
+                },
+            ],
         },
 
-    ],
+        languages: {
+            name: "Programming Languages",
+            skills: [
+                {
+                    name: "Java",
+                    link: "https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png",
+                },
+                {
+                    name: "Dart",
+                    link: "https://img.icons8.com/color/48/dart.png",
+                },
+                {
+                    name: "JavaScript",
+                    link: "https://img.icons8.com/color/48/javascript--v1.png",
+                },
+                {
+                    name: "C++",
+                    link: "https://img.icons8.com/color/48/c-plus-plus-logo.png",
+                },
+                {
+                    name: "C",
+                    link: "https://img.icons8.com/fluency/48/c-programming.png",
+                },
+                {
+                    name: "Python",
+                    link: "https://img.icons8.com/color/48/python--v1.png",
+                },
+            ],
+        },
+        databases: {
+            name: "Databases",
+            skills: [
+                {
+                    name: "Firebase",
+                    link: "https://img.icons8.com/color/48/firebase.png",
+                },
 
+                {
+                    name: "MongoDB",
+                    link: "https://img.icons8.com/color/48/mongodb.png",
+                },
+                {
+                    name: "PostgreSQL",
+                    link: "https://img.icons8.com/color/48/postgreesql.png",
+                },
+                {
+                    name: "MySQL",
+                    link: "https://img.icons8.com/external-those-icons-flat-those-icons/48/external-MySQL-programming-and-development-those-icons-flat-those-icons.png"
+                },
+            ],
+        },
+        misc: {
+            name: "Miscellaneous",
+            skills: [
+                {
+                    name: "Git",
+                    link: "https://img.icons8.com/color/48/git.png",
+                },
+                {
+                    name: "Figma",
+                    link: "https://img.icons8.com/color/48/figma--v1.png",
+                },
+
+                {
+                    name: "DSA",
+                    link: "https://img.icons8.com/external-flaticons-flat-flat-icons/48/external-algorithms-data-analytics-flaticons-flat-flat-icons.png"
+                },
+                {
+                    name: "System Design",
+                    link: "https://img.icons8.com/ios-filled/48/imac-settings.png",
+                },
+                {
+                    name: "OOPS",
+                    link: "https://img.icons8.com/external-outline-black-m-oki-orlando/48/external-object-oriented-programming-programming-outline-outline-black-m-oki-orlando.png",
+                },
+            ],
+        },
+    },
 };

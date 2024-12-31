@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import ElevatedButton from "../components/ElevatedButton";
+import OutlinedButton from "../components/OutlinedButton";
 import { data } from "../data";
 export default function Hero() {
   return (
@@ -38,26 +40,38 @@ export default function Hero() {
               {data.tagLine}
             </p>
             <div className="flex gap-4 justify-center z-10">
-              <motion.button
+              {/* <motion.button
                 whileHover={{ scale: 1.05 }}
                 className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-600 transition-colors z-10"
               >
                 <a href={data.buttons.heroContactMeButton.path}>
                   {data.buttons.heroContactMeButton.title}
                 </a>
-              </motion.button>
-              <motion.button
+              </motion.button> */}
+              <ElevatedButton
+                link={data.buttons.heroContactMeButton.path}
+                isNotBlank={true}
+              >
+                {data.buttons.heroContactMeButton.title}
+              </ElevatedButton>
+              {/* <motion.button
                 whileHover={{ scale: 1.05 }}
                 className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-colors z-10"
               >
                 <a href={data.buttons.heroViewProjectsButton.path}>
                   {data.buttons.heroViewProjectsButton.title}
                 </a>
-              </motion.button>
+              </motion.button> */}
+              <OutlinedButton
+                link={data.buttons.heroViewProjectsButton.path}
+                isNotBlank={true}
+              >
+                {data.buttons.heroViewProjectsButton.title}
+              </OutlinedButton>
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             animate={{
               y: [0, 15, 0],
             }}
@@ -67,7 +81,7 @@ export default function Hero() {
               ease: "easeInOut",
             }}
             className="absolute bottom-16 right-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-xl"
-          ></motion.div>
+          ></motion.div> */}
         </div>
       </div>
     </div>

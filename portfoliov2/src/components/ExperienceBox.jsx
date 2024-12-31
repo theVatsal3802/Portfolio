@@ -35,7 +35,7 @@ export default function ExperienceBox({
           <h3 className="text-lg font-bold my-2 text-white/50">{`Duration: ${duration}`}</h3>
         </div>
       </div>
-      <ul className="list-disc px-8 mt-2">
+      <ul className="list-disc px-8 mt-2 text-lg">
         {desc.map((point, index) => (
           <div key={index} className="flex flex-row justify-start pt-2">
             <li>{` ${point}`}</li>
