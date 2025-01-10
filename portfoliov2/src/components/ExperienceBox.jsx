@@ -24,6 +24,7 @@ export default function ExperienceBox({
           <h4 className="text-xl font-bold mb-2">{position}</h4>
         </div>
         <div className="flex flex-col my-2 items-center md:items-end">
+          <h3 className="text-lg font-bold my-2 text-white/50">{duration}</h3>
           {certificate && (
             <ElevatedButton link={certificate} className="min-w-fit">
               <span className="mr-2">
@@ -32,7 +33,6 @@ export default function ExperienceBox({
               {" View certificate"}
             </ElevatedButton>
           )}
-          <h3 className="text-lg font-bold my-2 text-white/50">{`Duration: ${duration}`}</h3>
         </div>
       </div>
       <ul className="list-disc px-8 mt-2 text-lg">

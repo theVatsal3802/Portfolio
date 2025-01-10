@@ -16,9 +16,9 @@ export default function AboutSectionRowOne({
   };
 
   return (
-    <div className="border border-white/20 rounded-lg p-6">
+    <div className="rounded-lg p-6 items-center">
       <h3 className="text-2xl font-bold mb-2">{title}</h3>
-      <p className="text-white/50 mb-4">{text}</p>
+      <p className="text-white mb-4 text-center text-2xl">{text}</p>
       {src && (
         <div className="mt-4 relative h-[250px] overflow-hidden">
           <img

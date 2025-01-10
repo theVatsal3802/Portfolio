@@ -4,19 +4,25 @@ import { data } from "../data";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   function toggleNav() {
     setNav(!nav);
   }
 
-  function closeNav() {
+  function closeNav(index) {
+    handleClick(index);
     setNav(false);
   }
 
+  function handleClick(index) {
+    setSelectedIndex(index);
+  }
+
   return (
-    <div className="z-50 fixed flex justify-center w-full text-white font-bold">
+    <div className="z-50 fixed flex justify-center w-full font-bold">
       <div className="border border-white/20 mt-8 backdrop-blur-3xl rounded-3xl hidden md:flex items-center justify-center p-2 max-w-full mx-auto">
-        <ul className="flex flex-row p-2 space-x-8">
+        <ul className="flex flex-row py-2 px-4 space-x-8">
           {data.navLinks.map((link, index) => (
             <li
               key={index}
@@ -26,10 +32,15 @@ export default function Navbar() {
                 href={link.path}
                 target={link.isRedirectLink ? "_blank" : null}
                 className={`transform hover:skew-x-12 transition-all duration-300 ease-in-out ${
+                  selectedIndex === index
+                    ? "underline underline-offset-2 font-extrabold"
+                    : ""
+                }  ${
                   link.isRedirectLink
                     ? "text-emerald-300 hover:text-emerald-600"
-                    : "hover:text-white/50"
+                    : "text-white hover:text-white/50"
                 }`}
+                onClick={() => handleClick(index)}
               >
                 {link.title}
               </a>
@@ -60,7 +71,7 @@ export default function Navbar() {
                     ? "text-emerald-300 hover:text-emerald-600"
                     : "hover:text-white/50"
                 }`}
-                onClick={closeNav}
+                onClick={() => closeNav(index)}
               >
                 {link.title}
               </a>

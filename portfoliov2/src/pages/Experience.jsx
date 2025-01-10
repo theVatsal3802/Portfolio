@@ -8,7 +8,7 @@ export default function Experience() {
         <h2 className="text-4xl md:text-7xl font-bold mb-8 text-emerald-300 mx-auto text-center">
           Experience
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex flex-col gap-8">
           {data.experience.map((position, index) => (
             <ExperienceBox
               key={index}

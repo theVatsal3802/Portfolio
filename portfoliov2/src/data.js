@@ -1,7 +1,6 @@
-import aboutme from "./assets/aboutme.png";
-import achievementImage from "./assets/achievement.png";
 import profilepic from "./assets/profilepic.png";
-import skills from "./assets/skills.png";
+import trophy from "./assets/trophy.png";
+
 
 export const data = {
     // General Strings
@@ -12,10 +11,13 @@ export const data = {
 
     // Navbar
     navLinks: [
+        { title: "Home", path: "#" },
         { title: "About", path: "#about" },
+        { title: "Education", path: "#education" },
         { title: "Experience", path: "#experience" },
         { title: "Projects", path: "#projects" },
         { title: "Skills", path: "#skills" },
+        { title: "Achievements", path: "#achievements" },
         { title: "View Resume", path: "https://drive.google.com/file/d/1LPE6MmlGxLOtFRU5GGCIO96rMARtHm0h/view?usp=drive_link", isRedirectLink: true },
         { title: "Contact", path: "#contact" },
     ],
@@ -69,68 +71,53 @@ export const data = {
             children: {
                 dob: "3rd August, 2002",
                 location: "Thane, Maharashtra, India",
+                education: "Pursuing M.tech at IIT Kharagpur"
             },
-        },
-        second: {
-            title: "02. Expertise",
-            text: "I specialize in building robust and scalable applications using modern technologies. My expertise spans both fonrt-end and back-end development, allowing me to create seamless end-to-end solutions.",
-            src: aboutme,
-            alt: "About Me",
-            children: {},
-        },
-        third: {
-            title: "03. Skills",
-            text: "A passionate software developer with expertise in creating innovative and user-friendly applications, I specialize in crafting responsive and visually appealing designs. With strong skills in software development and a commitment to staying ahead in the field, I thrive on learning and embracing new challenges to push the boundaries of technology.",
-            src: skills,
-            alt: "Skills",
         },
     },
 
-    rowTwo: {
-        first: {
-            title: "04. Education",
-        },
-        second: {
-            title: "05. Achievements",
-        },
-    },
+    // rowTwo: {
+    //     first: {
+    //         title: "04. Education",
+    //     },
+    //     second: {
+    //         title: "05. Achievements",
+    //     },
+    // },
+
+    achievementImg: trophy,
 
     education: [
         {
             college: "IIT Kharagpur",
-            percentage: "83.8%",
             score: "CGPA: 8.38 / 10",
             level: "M.Tech in CSE",
             duration: "Jul 2024 - Jun 2026",
         },
         {
             college: "IIIT Kota",
-            percentage: "83.9%",
             score: "CGPA: 8.39 / 10",
             level: "B.Tech in CSE",
             duration: "Dec 2020 - May 2024",
         },
         {
             college: "SMT SBJ Junior College of Science and Commerce",
-            percentage: "88.31%",
-            score: "88.31%",
+            score: "Percentage: 88.31%",
             level: "Grade 12 (HSC)",
             duration: "2018 - 2020",
         },
         {
             college: "Ryan International School",
-            percentage: "91.57%",
-            score: "91.57%",
+            score: "Percentage: 91.57%",
             level: "Grade 10 (SSC)",
             duration: "2017 - 2018",
         },
     ],
 
-    achievementImg: achievementImage,
-
     achievement: [
-        "Achieved AIR 313 (99.74 percentile) out of a total of 150,000 aspirants in GATE 2024.",
-        "Shortlisted in the Top 100 finalists for the Google Solution Challenge, 2023. Worked on an LGBTQ + Social Media App in Flutter."
+        { title: "Achieved AIR 313 (99.74 percentile) out of a total of 150,000 aspirants in GATE 2024.", },
+        { title: "Shortlisted in the Top 100 finalists for the Google Solution Challenge, 2023. Worked on an LGBTQ + Social Media App in Flutter." },
+        { title: "Achieved 98.07 percentile out of a total of around 10,00,000 aspirants in JEE Mains 2020." },
     ],
 
     experience: [
@@ -326,7 +313,7 @@ export const data = {
             ],
         },
         misc: {
-            name: "Miscellaneous",
+            name: "Core Skills",
             skills: [
                 {
                     name: "Git",

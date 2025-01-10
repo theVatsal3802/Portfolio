@@ -11,7 +11,7 @@ export default function Projects() {
       <h2 className="text-4xl md:text-7xl font-bold mb-16 text-emerald-300 mx-auto text-center">
         Projects
       </h2>
-      <div className="container grid grid-cols-1 md:grid-cols-3 mx-auto space-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 mx-auto space-8">
         {data.projects.map((project, index) => (
           <motion.div
             key={index}
@@ -79,7 +79,7 @@ export default function Projects() {
                 </motion.div>
               )}
             </AnimatePresence> */}
-            <div className="flex flex-col items-center text-center border border-white/20 hover:bg-white/5 rounded-3xl p-4">
+            <div className="h-full flex flex-col items-center text-center border border-white/20 hover:bg-white/5 rounded-3xl p-4">
               <h3 className="text-2xl md:text-3xl text-center font-bold mb-2 text-emerald-300">
                 {project.title}
               </h3>
