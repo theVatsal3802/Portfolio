@@ -1,2 +1,0 @@
-1. Revamp About section (Pending)
-2. Spelling error in front-end in about section (Fixed in local)
